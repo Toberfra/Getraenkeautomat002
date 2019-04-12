@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Eigene)(type Legacy)(uri ${KIPRJMOD}/Eigene.lib)(options "")(descr ""))
+)

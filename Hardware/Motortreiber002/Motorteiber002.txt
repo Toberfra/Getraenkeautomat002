@@ -1,0 +1,7 @@
+Reference, Value, Footprint, Datasheet
+"J1","Conn_01x02","","~"
+"C1","CP","","~"
+"J2","Conn_01x04","","~"
+"J3","Conn_01x04","","~"
+"J4","Conn_01x04","","~"
+"J5","Conn_01x04","","~"
