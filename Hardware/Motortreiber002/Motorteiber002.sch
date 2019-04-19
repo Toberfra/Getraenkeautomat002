@@ -288,18 +288,6 @@ Entry Wire Line
 	2700 1700 2800 1600
 Entry Bus Bus
 	2800 1300 2900 1200
-Wire Bus Line
-	4850 1300 4850 2200
-Wire Bus Line
-	6500 1300 6500 2200
-Wire Bus Line
-	9850 1300 9850 2200
-Wire Bus Line
-	8250 1300 8250 2200
-Wire Bus Line
-	2900 1200 9750 1200
-Wire Bus Line
-	2800 1300 2800 2850
 Text Label 2600 1700 2    50   ~ 0
 R
 Text Label 2600 1800 2    50   ~ 0
@@ -324,4 +312,16 @@ Text Label 2600 2850 2    50   ~ 0
 Ue3
 Text Label 2600 2950 2    50   ~ 0
 Ue4
+Wire Bus Line
+	2900 1200 9750 1200
+Wire Bus Line
+	4850 1300 4850 2200
+Wire Bus Line
+	6500 1300 6500 2200
+Wire Bus Line
+	9850 1300 9850 2200
+Wire Bus Line
+	8250 1300 8250 2200
+Wire Bus Line
+	2800 1300 2800 2850
 $EndSCHEMATC
