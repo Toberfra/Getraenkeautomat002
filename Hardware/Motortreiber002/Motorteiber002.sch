@@ -26,7 +26,7 @@ U 5CB4900E
 F0 "Motortreiber5" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 10300 1700 50 
-F3 "Steuer" I L 10300 900 50 
+F3 "Steuer[0..6]" I L 10300 900 50 
 $EndSheet
 $Sheet
 S 7400 750  1000 1150
@@ -34,7 +34,7 @@ U 5CAFBDFD
 F0 "Motortreiber3" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 7400 1700 50 
-F3 "Steuer" I L 7400 900 50 
+F3 "Steuer[0..6]" I L 7400 900 50 
 $EndSheet
 $Sheet
 S 600  650  900  2200
@@ -154,7 +154,7 @@ U 5CBEA5F1
 F0 "Motortreiber1" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 4450 1700 50 
-F3 "Steuer" I L 4450 900 50 
+F3 "Steuer[0..6]" I L 4450 900 50 
 $EndSheet
 Wire Bus Line
 	4150 1600 4150 550 
@@ -182,7 +182,7 @@ U 5CBF1A9C
 F0 "Motortreiber0" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 3000 1700 50 
-F3 "Steuer" I L 3000 900 50 
+F3 "Steuer[0..6]" I L 3000 900 50 
 $EndSheet
 Wire Bus Line
 	2700 1600 2700 550 
@@ -204,7 +204,7 @@ U 5CC655DA
 F0 "Motortreiber9" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 7400 3250 50 
-F3 "Steuer" I L 7400 2400 50 
+F3 "Steuer[0..6]" I L 7400 2400 50 
 $EndSheet
 Wire Bus Line
 	8450 3150 8450 2100
@@ -273,7 +273,7 @@ U 5CC65665
 F0 "Motortreiber6" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 3000 3250 50 
-F3 "Steuer" I L 3000 2400 50 
+F3 "Steuer[0..6]" I L 3000 2400 50 
 $EndSheet
 Wire Bus Line
 	2700 3150 2700 2100
@@ -295,7 +295,7 @@ U 5CC75215
 F0 "Motortreiber14" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 8800 4800 50 
-F3 "Steuer" I L 8800 3950 50 
+F3 "Steuer[0..6]" I L 8800 3950 50 
 $EndSheet
 $Sheet
 S 7400 3850 1000 1150
@@ -303,7 +303,7 @@ U 5CC75225
 F0 "Motortreiber13" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 7400 4800 50 
-F3 "Steuer" I L 7400 3950 50 
+F3 "Steuer[0..6]" I L 7400 3950 50 
 $EndSheet
 $Sheet
 S 5900 3850 1050 1150
@@ -311,7 +311,7 @@ U 5CC7522D
 F0 "Motortreiber12" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 5900 4800 50 
-F3 "Steuer" I L 5900 3950 50 
+F3 "Steuer[0..6]" I L 5900 3950 50 
 $EndSheet
 Wire Bus Line
 	8450 4700 8450 3650
@@ -393,7 +393,7 @@ Wire Bus Line
 Wire Bus Line
 	4200 500  4200 900 
 Text Label 2750 900  0    50   ~ 0
-Steuer
+Steuer[0..6]
 Wire Bus Line
 	5650 500  5650 900 
 $Sheet
@@ -402,7 +402,7 @@ U 5CAFB649
 F0 "Motortreiber2" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 5900 1700 50 
-F3 "Steuer" I L 5900 900 50 
+F3 "Steuer[0..6]" I L 5900 900 50 
 $EndSheet
 Wire Bus Line
 	7050 500  7050 900 
@@ -416,7 +416,7 @@ U 5CC65644
 F0 "Motortreiber7" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 4450 3250 50 
-F3 "Steuer" I L 4450 2400 50 
+F3 "Steuer[0..6]" I L 4450 2400 50 
 $EndSheet
 Wire Bus Line
 	5650 2050 5650 2400
@@ -428,7 +428,7 @@ U 5CC655E2
 F0 "Motortreiber8" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 5900 3250 50 
-F3 "Steuer" I L 5900 2400 50 
+F3 "Steuer[0..6]" I L 5900 2400 50 
 $EndSheet
 Wire Bus Line
 	8500 500  8500 900 
@@ -438,7 +438,7 @@ U 5CB48D70
 F0 "Motortreiber4" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 8800 1700 50 
-F3 "Steuer" I L 8800 900 50 
+F3 "Steuer[0..6]" I L 8800 900 50 
 $EndSheet
 Wire Bus Line
 	10000 500  10000 900 
@@ -465,7 +465,7 @@ U 5CC655CA
 F0 "Motortreiber10" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 8800 3250 50 
-F3 "Steuer" I L 8800 2400 50 
+F3 "Steuer[0..6]" I L 8800 2400 50 
 $EndSheet
 Wire Bus Line
 	10000 3600 10000 3950
@@ -475,7 +475,7 @@ U 5CC7521D
 F0 "Motortreiber15" 50
 F1 "Motortreiber.sch" 50
 F2 "Uebernahme" I L 10300 4800 50 
-F3 "Steuer" I L 10300 3950 50 
+F3 "Steuer[0..6]" I L 10300 3950 50 
 $EndSheet
 Wire Bus Line
 	7050 3600 7050 3950
@@ -486,8 +486,8 @@ S 10300 2300 850  1100
 U 5CC4B548
 F0 "Motortreiber11" 50
 F1 "Motortreiber.sch" 50
-F2 "Steuer" I L 10300 2400 50 
-F3 "Uebernahme" I L 10300 3250 50 
+F2 "Uebernahme" I L 10300 3250 50 
+F3 "Steuer[0..6]" I L 10300 2400 50 
 $EndSheet
 Wire Bus Line
 	10300 900  10000 900 
