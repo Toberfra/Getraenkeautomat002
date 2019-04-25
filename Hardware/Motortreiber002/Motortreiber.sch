@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 7
+Sheet 7 19
 Title ""
 Date ""
 Rev ""
@@ -14,23 +14,54 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 5800 2800 2    50   Input ~ 0
-Reset
-Text HLabel 5800 2900 2    50   Input ~ 0
-Sleep
-Text HLabel 5800 4000 2    50   Input ~ 0
-Data
-Text HLabel 5800 3800 2    50   Input ~ 0
-Clock
 $Comp
-L power:+28V #PWR0106
+L power:+28V #PWR01201
 U 1 1 5CAFBB89
 P 1950 2050
-AR Path="/5CAFB649/5CAFBB89" Ref="#PWR0106"  Part="1" 
-AR Path="/5CAFBDFD/5CAFBB89" Ref="#PWR0108"  Part="1" 
-AR Path="/5CB48D70/5CAFBB89" Ref="#PWR01"  Part="1" 
-AR Path="/5CB4900E/5CAFBB89" Ref="#PWR014"  Part="1" 
-F 0 "#PWR0106" H 1950 1900 50  0001 C CNN
+AR Path="/5CAFB649/5CAFBB89" Ref="#PWR01201"  Part="1" 
+AR Path="/5CAFBDFD/5CAFBB89" Ref="#PWR01301"  Part="1" 
+AR Path="/5CB48D70/5CAFBB89" Ref="#PWR01401"  Part="1" 
+AR Path="/5CB4900E/5CAFBB89" Ref="#PWR01514"  Part="1" 
+AR Path="/5CBEA5F1/5CAFBB89" Ref="#PWR01101"  Part="1" 
+AR Path="/5CBF1A9C/5CAFBB89" Ref="#PWR01001"  Part="1" 
+AR Path="/5CBF7FFA/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CAFBB89" Ref="#PWR02001"  Part="1" 
+AR Path="/5CC655D2/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CAFBB89" Ref="#PWR01901"  Part="1" 
+AR Path="/5CC655E2/5CAFBB89" Ref="#PWR01801"  Part="1" 
+AR Path="/5CC65644/5CAFBB89" Ref="#PWR01701"  Part="1" 
+AR Path="/5CC65665/5CAFBB89" Ref="#PWR01601"  Part="1" 
+AR Path="/5CC75215/5CAFBB89" Ref="#PWR02401"  Part="1" 
+AR Path="/5CC7521D/5CAFBB89" Ref="#PWR02501"  Part="1" 
+AR Path="/5CC75225/5CAFBB89" Ref="#PWR02301"  Part="1" 
+AR Path="/5CC7522D/5CAFBB89" Ref="#PWR02201"  Part="1" 
+AR Path="/5CC7528F/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CAFBB89" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CAFBB89" Ref="#PWR02101"  Part="1" 
+F 0 "#PWR02101" H 1950 1900 50  0001 C CNN
 F 1 "+28V" H 1965 2223 50  0000 C CNN
 F 2 "" H 2200 2100 50  0001 C CNN
 F 3 "" H 2200 2100 50  0001 C CNN
@@ -38,14 +69,53 @@ F 3 "" H 2200 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Eigene:DRV8823 U1
+L Eigene:DRV8823 U1201
 U 1 1 5CA10EF0
 P 4650 3500
-AR Path="/5CAFB649/5CA10EF0" Ref="U1"  Part="1" 
-AR Path="/5CAFBDFD/5CA10EF0" Ref="U2"  Part="1" 
-AR Path="/5CB48D70/5CA10EF0" Ref="U3"  Part="1" 
-AR Path="/5CB4900E/5CA10EF0" Ref="U4"  Part="1" 
-F 0 "U1" H 4650 5065 50  0000 C CNN
+AR Path="/5CAFB649/5CA10EF0" Ref="U1201"  Part="1" 
+AR Path="/5CAFBDFD/5CA10EF0" Ref="U1301"  Part="1" 
+AR Path="/5CB48D70/5CA10EF0" Ref="U1401"  Part="1" 
+AR Path="/5CB4900E/5CA10EF0" Ref="U1502"  Part="1" 
+AR Path="/5CBEA5F1/5CA10EF0" Ref="U1101"  Part="1" 
+AR Path="/5CBF1A9C/5CA10EF0" Ref="U1001"  Part="1" 
+AR Path="/5CBF7FFA/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBF8002/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBF800A/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBF8012/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBF8074/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBF8095/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE1F3/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE1FB/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE203/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE20B/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE26D/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CBFE28E/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DCB3/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DCBB/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DCC3/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DCCB/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD2D/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD4E/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD6D/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD75/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD7D/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DD85/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DDBD/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC0DDD1/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC655CA/5CA10EF0" Ref="U2001"  Part="1" 
+AR Path="/5CC655D2/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC655DA/5CA10EF0" Ref="U1901"  Part="1" 
+AR Path="/5CC655E2/5CA10EF0" Ref="U1801"  Part="1" 
+AR Path="/5CC65644/5CA10EF0" Ref="U1701"  Part="1" 
+AR Path="/5CC65665/5CA10EF0" Ref="U1601"  Part="1" 
+AR Path="/5CC75215/5CA10EF0" Ref="U2401"  Part="1" 
+AR Path="/5CC7521D/5CA10EF0" Ref="U2501"  Part="1" 
+AR Path="/5CC75225/5CA10EF0" Ref="U2301"  Part="1" 
+AR Path="/5CC7522D/5CA10EF0" Ref="U2201"  Part="1" 
+AR Path="/5CC7528F/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC752B0/5CA10EF0" Ref="U?"  Part="1" 
+AR Path="/5CC4B548/5CA10EF0" Ref="U2101"  Part="1" 
+F 0 "U1001" H 4650 5065 50  0000 C CNN
 F 1 "DRV8823" H 4650 4974 50  0000 C CNN
 F 2 "Package_SO:TSSOP-48_6.1x12.5mm_P0.5mm" V 4550 3350 50  0001 C CNN
 F 3 "" H 4000 3800 50  0001 C CNN
@@ -137,14 +207,53 @@ Wire Wire Line
 Wire Wire Line
 	3650 3800 3650 3050
 $Comp
-L Connector:Screw_Terminal_01x04 J2
+L Connector:Screw_Terminal_01x04 J1201
 U 1 1 5CA5AEA1
 P 4600 1600
-AR Path="/5CAFB649/5CA5AEA1" Ref="J2"  Part="1" 
-AR Path="/5CAFBDFD/5CA5AEA1" Ref="J4"  Part="1" 
-AR Path="/5CB48D70/5CA5AEA1" Ref="J6"  Part="1" 
-AR Path="/5CB4900E/5CA5AEA1" Ref="J8"  Part="1" 
-F 0 "J2" V 4564 1312 50  0000 R CNN
+AR Path="/5CAFB649/5CA5AEA1" Ref="J1201"  Part="1" 
+AR Path="/5CAFBDFD/5CA5AEA1" Ref="J1301"  Part="1" 
+AR Path="/5CB48D70/5CA5AEA1" Ref="J1401"  Part="1" 
+AR Path="/5CB4900E/5CA5AEA1" Ref="J1503"  Part="1" 
+AR Path="/5CBEA5F1/5CA5AEA1" Ref="J1101"  Part="1" 
+AR Path="/5CBF1A9C/5CA5AEA1" Ref="J1001"  Part="1" 
+AR Path="/5CBF7FFA/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBF8002/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBF800A/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBF8012/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBF8074/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBF8095/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE1F3/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE1FB/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE203/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE20B/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE26D/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CBFE28E/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DCB3/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DCBB/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DCC3/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DCCB/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD2D/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD4E/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD6D/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD75/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD7D/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DD85/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DDBD/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC0DDD1/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC655CA/5CA5AEA1" Ref="J2001"  Part="1" 
+AR Path="/5CC655D2/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC655DA/5CA5AEA1" Ref="J1901"  Part="1" 
+AR Path="/5CC655E2/5CA5AEA1" Ref="J1801"  Part="1" 
+AR Path="/5CC65644/5CA5AEA1" Ref="J1701"  Part="1" 
+AR Path="/5CC65665/5CA5AEA1" Ref="J1601"  Part="1" 
+AR Path="/5CC75215/5CA5AEA1" Ref="J2401"  Part="1" 
+AR Path="/5CC7521D/5CA5AEA1" Ref="J2501"  Part="1" 
+AR Path="/5CC75225/5CA5AEA1" Ref="J2301"  Part="1" 
+AR Path="/5CC7522D/5CA5AEA1" Ref="J2201"  Part="1" 
+AR Path="/5CC7528F/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC752B0/5CA5AEA1" Ref="J?"  Part="1" 
+AR Path="/5CC4B548/5CA5AEA1" Ref="J2101"  Part="1" 
+F 0 "J1001" V 4564 1312 50  0000 R CNN
 F 1 "Screw_Terminal_01x04" V 4473 1312 50  0000 R CNN
 F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_4-G-5.08_1x04_P5.08mm_Vertical" H 4600 1600 50  0001 C CNN
 F 3 "~" H 4600 1600 50  0001 C CNN
@@ -152,14 +261,53 @@ F 3 "~" H 4600 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J3
+L Connector:Screw_Terminal_01x04 J1202
 U 1 1 5CA5CF1C
 P 4650 5250
-AR Path="/5CAFB649/5CA5CF1C" Ref="J3"  Part="1" 
-AR Path="/5CAFBDFD/5CA5CF1C" Ref="J5"  Part="1" 
-AR Path="/5CB48D70/5CA5CF1C" Ref="J7"  Part="1" 
-AR Path="/5CB4900E/5CA5CF1C" Ref="J9"  Part="1" 
-F 0 "J3" V 4522 5430 50  0000 L CNN
+AR Path="/5CAFB649/5CA5CF1C" Ref="J1202"  Part="1" 
+AR Path="/5CAFBDFD/5CA5CF1C" Ref="J1302"  Part="1" 
+AR Path="/5CB48D70/5CA5CF1C" Ref="J1402"  Part="1" 
+AR Path="/5CB4900E/5CA5CF1C" Ref="J1504"  Part="1" 
+AR Path="/5CBEA5F1/5CA5CF1C" Ref="J1102"  Part="1" 
+AR Path="/5CBF1A9C/5CA5CF1C" Ref="J1002"  Part="1" 
+AR Path="/5CBF7FFA/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBF8002/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBF800A/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBF8012/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBF8074/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBF8095/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE1F3/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE1FB/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE203/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE20B/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE26D/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CBFE28E/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DCB3/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DCBB/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DCC3/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DCCB/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD2D/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD4E/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD6D/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD75/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD7D/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DD85/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DDBD/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC0DDD1/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC655CA/5CA5CF1C" Ref="J2002"  Part="1" 
+AR Path="/5CC655D2/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC655DA/5CA5CF1C" Ref="J1902"  Part="1" 
+AR Path="/5CC655E2/5CA5CF1C" Ref="J1802"  Part="1" 
+AR Path="/5CC65644/5CA5CF1C" Ref="J1702"  Part="1" 
+AR Path="/5CC65665/5CA5CF1C" Ref="J1602"  Part="1" 
+AR Path="/5CC75215/5CA5CF1C" Ref="J2402"  Part="1" 
+AR Path="/5CC7521D/5CA5CF1C" Ref="J2502"  Part="1" 
+AR Path="/5CC75225/5CA5CF1C" Ref="J2302"  Part="1" 
+AR Path="/5CC7522D/5CA5CF1C" Ref="J2202"  Part="1" 
+AR Path="/5CC7528F/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC752B0/5CA5CF1C" Ref="J?"  Part="1" 
+AR Path="/5CC4B548/5CA5CF1C" Ref="J2102"  Part="1" 
+F 0 "J1002" V 4522 5430 50  0000 L CNN
 F 1 "Screw_Terminal_01x04" V 4613 5430 50  0000 L CNN
 F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_4-G-5.08_1x04_P5.08mm_Vertical" H 4650 5250 50  0001 C CNN
 F 3 "~" H 4650 5250 50  0001 C CNN
@@ -247,14 +395,53 @@ Wire Wire Line
 Wire Wire Line
 	5300 2600 5500 2600
 $Comp
-L power:GND #PWR0109
+L power:GND #PWR01211
 U 1 1 5CB597A7
 P 5600 3550
-AR Path="/5CAFB649/5CB597A7" Ref="#PWR0109"  Part="1" 
-AR Path="/5CAFBDFD/5CB597A7" Ref="#PWR0121"  Part="1" 
-AR Path="/5CB48D70/5CB597A7" Ref="#PWR011"  Part="1" 
-AR Path="/5CB4900E/5CB597A7" Ref="#PWR024"  Part="1" 
-F 0 "#PWR0109" H 5600 3300 50  0001 C CNN
+AR Path="/5CAFB649/5CB597A7" Ref="#PWR01211"  Part="1" 
+AR Path="/5CAFBDFD/5CB597A7" Ref="#PWR01311"  Part="1" 
+AR Path="/5CB48D70/5CB597A7" Ref="#PWR01411"  Part="1" 
+AR Path="/5CB4900E/5CB597A7" Ref="#PWR01524"  Part="1" 
+AR Path="/5CBEA5F1/5CB597A7" Ref="#PWR01111"  Part="1" 
+AR Path="/5CBF1A9C/5CB597A7" Ref="#PWR01011"  Part="1" 
+AR Path="/5CBF7FFA/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB597A7" Ref="#PWR02011"  Part="1" 
+AR Path="/5CC655D2/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB597A7" Ref="#PWR01911"  Part="1" 
+AR Path="/5CC655E2/5CB597A7" Ref="#PWR01811"  Part="1" 
+AR Path="/5CC65644/5CB597A7" Ref="#PWR01711"  Part="1" 
+AR Path="/5CC65665/5CB597A7" Ref="#PWR01611"  Part="1" 
+AR Path="/5CC75215/5CB597A7" Ref="#PWR02411"  Part="1" 
+AR Path="/5CC7521D/5CB597A7" Ref="#PWR02511"  Part="1" 
+AR Path="/5CC75225/5CB597A7" Ref="#PWR02311"  Part="1" 
+AR Path="/5CC7522D/5CB597A7" Ref="#PWR02211"  Part="1" 
+AR Path="/5CC7528F/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB597A7" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB597A7" Ref="#PWR02111"  Part="1" 
+F 0 "#PWR02111" H 5600 3300 50  0001 C CNN
 F 1 "GND" H 5605 3377 50  0000 C CNN
 F 2 "" H 5600 3550 50  0001 C CNN
 F 3 "" H 5600 3550 50  0001 C CNN
@@ -266,14 +453,53 @@ Wire Wire Line
 Wire Wire Line
 	5600 3500 5400 3500
 $Comp
-L power:GND #PWR0110
+L power:GND #PWR01210
 U 1 1 5CB5E84A
 P 3800 3550
-AR Path="/5CAFB649/5CB5E84A" Ref="#PWR0110"  Part="1" 
-AR Path="/5CAFBDFD/5CB5E84A" Ref="#PWR0122"  Part="1" 
-AR Path="/5CB48D70/5CB5E84A" Ref="#PWR010"  Part="1" 
-AR Path="/5CB4900E/5CB5E84A" Ref="#PWR023"  Part="1" 
-F 0 "#PWR0110" H 3800 3300 50  0001 C CNN
+AR Path="/5CAFB649/5CB5E84A" Ref="#PWR01210"  Part="1" 
+AR Path="/5CAFBDFD/5CB5E84A" Ref="#PWR01310"  Part="1" 
+AR Path="/5CB48D70/5CB5E84A" Ref="#PWR01410"  Part="1" 
+AR Path="/5CB4900E/5CB5E84A" Ref="#PWR01523"  Part="1" 
+AR Path="/5CBEA5F1/5CB5E84A" Ref="#PWR01110"  Part="1" 
+AR Path="/5CBF1A9C/5CB5E84A" Ref="#PWR01010"  Part="1" 
+AR Path="/5CBF7FFA/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB5E84A" Ref="#PWR02010"  Part="1" 
+AR Path="/5CC655D2/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB5E84A" Ref="#PWR01910"  Part="1" 
+AR Path="/5CC655E2/5CB5E84A" Ref="#PWR01810"  Part="1" 
+AR Path="/5CC65644/5CB5E84A" Ref="#PWR01710"  Part="1" 
+AR Path="/5CC65665/5CB5E84A" Ref="#PWR01610"  Part="1" 
+AR Path="/5CC75215/5CB5E84A" Ref="#PWR02410"  Part="1" 
+AR Path="/5CC7521D/5CB5E84A" Ref="#PWR02510"  Part="1" 
+AR Path="/5CC75225/5CB5E84A" Ref="#PWR02310"  Part="1" 
+AR Path="/5CC7522D/5CB5E84A" Ref="#PWR02210"  Part="1" 
+AR Path="/5CC7528F/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB5E84A" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB5E84A" Ref="#PWR02110"  Part="1" 
+F 0 "#PWR02110" H 3800 3300 50  0001 C CNN
 F 1 "GND" H 3805 3377 50  0000 C CNN
 F 2 "" H 3800 3550 50  0001 C CNN
 F 3 "" H 3800 3550 50  0001 C CNN
@@ -285,14 +511,53 @@ Wire Wire Line
 Wire Wire Line
 	3800 3500 3900 3500
 $Comp
-L Device:R R3
+L Device:R R1202
 U 1 1 5CB640E6
 P 3400 2600
-AR Path="/5CAFB649/5CB640E6" Ref="R3"  Part="1" 
-AR Path="/5CAFBDFD/5CB640E6" Ref="R9"  Part="1" 
-AR Path="/5CB48D70/5CB640E6" Ref="R15"  Part="1" 
-AR Path="/5CB4900E/5CB640E6" Ref="R21"  Part="1" 
-F 0 "R3" V 3193 2600 50  0000 C CNN
+AR Path="/5CAFB649/5CB640E6" Ref="R1202"  Part="1" 
+AR Path="/5CAFBDFD/5CB640E6" Ref="R1302"  Part="1" 
+AR Path="/5CB48D70/5CB640E6" Ref="R1402"  Part="1" 
+AR Path="/5CB4900E/5CB640E6" Ref="R1506"  Part="1" 
+AR Path="/5CBEA5F1/5CB640E6" Ref="R1102"  Part="1" 
+AR Path="/5CBF1A9C/5CB640E6" Ref="R1002"  Part="1" 
+AR Path="/5CBF7FFA/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBF8002/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBF800A/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBF8012/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBF8074/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBF8095/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE1F3/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE1FB/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE203/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE20B/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE26D/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CBFE28E/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DCB3/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DCBB/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DCC3/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DCCB/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD2D/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD4E/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD6D/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD75/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD7D/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DD85/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DDBD/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC0DDD1/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC655CA/5CB640E6" Ref="R2002"  Part="1" 
+AR Path="/5CC655D2/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC655DA/5CB640E6" Ref="R1902"  Part="1" 
+AR Path="/5CC655E2/5CB640E6" Ref="R1802"  Part="1" 
+AR Path="/5CC65644/5CB640E6" Ref="R1702"  Part="1" 
+AR Path="/5CC65665/5CB640E6" Ref="R1602"  Part="1" 
+AR Path="/5CC75215/5CB640E6" Ref="R2402"  Part="1" 
+AR Path="/5CC7521D/5CB640E6" Ref="R2502"  Part="1" 
+AR Path="/5CC75225/5CB640E6" Ref="R2302"  Part="1" 
+AR Path="/5CC7522D/5CB640E6" Ref="R2202"  Part="1" 
+AR Path="/5CC7528F/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC752B0/5CB640E6" Ref="R?"  Part="1" 
+AR Path="/5CC4B548/5CB640E6" Ref="R2102"  Part="1" 
+F 0 "R1002" V 3193 2600 50  0000 C CNN
 F 1 "0R5" V 3284 2600 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 3330 2600 50  0001 C CNN
 F 3 "" H 3400 2600 50  0001 C CNN
@@ -301,30 +566,108 @@ F 4 "RND 0W2J050KA10" V 3400 2600 50  0001 C CNN "Reichelt"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
+L Device:R R1201
 U 1 1 5CB64BF2
-P 3400 4300
-AR Path="/5CAFB649/5CB64BF2" Ref="R4"  Part="1" 
-AR Path="/5CAFBDFD/5CB64BF2" Ref="R10"  Part="1" 
-AR Path="/5CB48D70/5CB64BF2" Ref="R16"  Part="1" 
-AR Path="/5CB4900E/5CB64BF2" Ref="R22"  Part="1" 
-F 0 "R4" V 3193 4300 50  0000 C CNN
-F 1 "0R5" V 3284 4300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 3330 4300 50  0001 C CNN
-F 3 "~" H 3400 4300 50  0001 C CNN
-F 4 "RND 0W2J050KA10" V 3400 4300 50  0001 C CNN "Reichelt"
-	1    3400 4300
+P 2850 4900
+AR Path="/5CAFB649/5CB64BF2" Ref="R1201"  Part="1" 
+AR Path="/5CAFBDFD/5CB64BF2" Ref="R1301"  Part="1" 
+AR Path="/5CB48D70/5CB64BF2" Ref="R1401"  Part="1" 
+AR Path="/5CB4900E/5CB64BF2" Ref="R1505"  Part="1" 
+AR Path="/5CBEA5F1/5CB64BF2" Ref="R1101"  Part="1" 
+AR Path="/5CBF1A9C/5CB64BF2" Ref="R1001"  Part="1" 
+AR Path="/5CBF7FFA/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBF8002/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBF800A/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBF8012/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBF8074/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBF8095/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE1F3/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE1FB/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE203/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE20B/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE26D/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CBFE28E/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DCB3/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DCBB/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DCC3/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DCCB/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD2D/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD4E/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD6D/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD75/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD7D/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DD85/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DDBD/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC0DDD1/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC655CA/5CB64BF2" Ref="R2001"  Part="1" 
+AR Path="/5CC655D2/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC655DA/5CB64BF2" Ref="R1901"  Part="1" 
+AR Path="/5CC655E2/5CB64BF2" Ref="R1801"  Part="1" 
+AR Path="/5CC65644/5CB64BF2" Ref="R1701"  Part="1" 
+AR Path="/5CC65665/5CB64BF2" Ref="R1601"  Part="1" 
+AR Path="/5CC75215/5CB64BF2" Ref="R2401"  Part="1" 
+AR Path="/5CC7521D/5CB64BF2" Ref="R2501"  Part="1" 
+AR Path="/5CC75225/5CB64BF2" Ref="R2301"  Part="1" 
+AR Path="/5CC7522D/5CB64BF2" Ref="R2201"  Part="1" 
+AR Path="/5CC7528F/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC752B0/5CB64BF2" Ref="R?"  Part="1" 
+AR Path="/5CC4B548/5CB64BF2" Ref="R2101"  Part="1" 
+F 0 "R1001" V 2643 4900 50  0000 C CNN
+F 1 "0R5" V 2734 4900 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 2780 4900 50  0001 C CNN
+F 3 "~" H 2850 4900 50  0001 C CNN
+F 4 "RND 0W2J050KA10" V 2850 4900 50  0001 C CNN "Reichelt"
+	1    2850 4900
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R6
+L Device:R R1204
 U 1 1 5CB65616
 P 5700 4500
-AR Path="/5CAFB649/5CB65616" Ref="R6"  Part="1" 
-AR Path="/5CAFBDFD/5CB65616" Ref="R12"  Part="1" 
-AR Path="/5CB48D70/5CB65616" Ref="R18"  Part="1" 
-AR Path="/5CB4900E/5CB65616" Ref="R24"  Part="1" 
-F 0 "R6" V 5493 4500 50  0000 C CNN
+AR Path="/5CAFB649/5CB65616" Ref="R1204"  Part="1" 
+AR Path="/5CAFBDFD/5CB65616" Ref="R1304"  Part="1" 
+AR Path="/5CB48D70/5CB65616" Ref="R1404"  Part="1" 
+AR Path="/5CB4900E/5CB65616" Ref="R1508"  Part="1" 
+AR Path="/5CBEA5F1/5CB65616" Ref="R1104"  Part="1" 
+AR Path="/5CBF1A9C/5CB65616" Ref="R1004"  Part="1" 
+AR Path="/5CBF7FFA/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBF8002/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBF800A/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBF8012/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBF8074/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBF8095/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE1F3/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE1FB/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE203/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE20B/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE26D/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CBFE28E/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DCB3/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DCBB/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DCC3/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DCCB/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD2D/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD4E/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD6D/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD75/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD7D/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DD85/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DDBD/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC0DDD1/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC655CA/5CB65616" Ref="R2004"  Part="1" 
+AR Path="/5CC655D2/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC655DA/5CB65616" Ref="R1904"  Part="1" 
+AR Path="/5CC655E2/5CB65616" Ref="R1804"  Part="1" 
+AR Path="/5CC65644/5CB65616" Ref="R1704"  Part="1" 
+AR Path="/5CC65665/5CB65616" Ref="R1604"  Part="1" 
+AR Path="/5CC75215/5CB65616" Ref="R2404"  Part="1" 
+AR Path="/5CC7521D/5CB65616" Ref="R2504"  Part="1" 
+AR Path="/5CC75225/5CB65616" Ref="R2304"  Part="1" 
+AR Path="/5CC7522D/5CB65616" Ref="R2204"  Part="1" 
+AR Path="/5CC7528F/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC752B0/5CB65616" Ref="R?"  Part="1" 
+AR Path="/5CC4B548/5CB65616" Ref="R2104"  Part="1" 
+F 0 "R1004" V 5493 4500 50  0000 C CNN
 F 1 "0R5" V 5584 4500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 5630 4500 50  0001 C CNN
 F 3 "~" H 5700 4500 50  0001 C CNN
@@ -333,14 +676,53 @@ F 4 "RND 0W2J050KA10" V 5700 4500 50  0001 C CNN "Reichelt"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R5
+L Device:R R1203
 U 1 1 5CB65C0C
 P 5700 2400
-AR Path="/5CAFB649/5CB65C0C" Ref="R5"  Part="1" 
-AR Path="/5CAFBDFD/5CB65C0C" Ref="R11"  Part="1" 
-AR Path="/5CB48D70/5CB65C0C" Ref="R17"  Part="1" 
-AR Path="/5CB4900E/5CB65C0C" Ref="R23"  Part="1" 
-F 0 "R5" V 5493 2400 50  0000 C CNN
+AR Path="/5CAFB649/5CB65C0C" Ref="R1203"  Part="1" 
+AR Path="/5CAFBDFD/5CB65C0C" Ref="R1303"  Part="1" 
+AR Path="/5CB48D70/5CB65C0C" Ref="R1403"  Part="1" 
+AR Path="/5CB4900E/5CB65C0C" Ref="R1507"  Part="1" 
+AR Path="/5CBEA5F1/5CB65C0C" Ref="R1103"  Part="1" 
+AR Path="/5CBF1A9C/5CB65C0C" Ref="R1003"  Part="1" 
+AR Path="/5CBF7FFA/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBF8002/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBF800A/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBF8012/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBF8074/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBF8095/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE1F3/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE1FB/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE203/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE20B/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE26D/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CBFE28E/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DCB3/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DCBB/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DCC3/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DCCB/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD2D/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD4E/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD6D/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD75/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD7D/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DD85/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DDBD/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC0DDD1/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC655CA/5CB65C0C" Ref="R2003"  Part="1" 
+AR Path="/5CC655D2/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC655DA/5CB65C0C" Ref="R1903"  Part="1" 
+AR Path="/5CC655E2/5CB65C0C" Ref="R1803"  Part="1" 
+AR Path="/5CC65644/5CB65C0C" Ref="R1703"  Part="1" 
+AR Path="/5CC65665/5CB65C0C" Ref="R1603"  Part="1" 
+AR Path="/5CC75215/5CB65C0C" Ref="R2403"  Part="1" 
+AR Path="/5CC7521D/5CB65C0C" Ref="R2503"  Part="1" 
+AR Path="/5CC75225/5CB65C0C" Ref="R2303"  Part="1" 
+AR Path="/5CC7522D/5CB65C0C" Ref="R2203"  Part="1" 
+AR Path="/5CC7528F/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC752B0/5CB65C0C" Ref="R?"  Part="1" 
+AR Path="/5CC4B548/5CB65C0C" Ref="R2103"  Part="1" 
+F 0 "R1003" V 5493 2400 50  0000 C CNN
 F 1 "0R5" V 5584 2400 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0411_L9.9mm_D3.6mm_P5.08mm_Vertical" V 5630 2400 50  0001 C CNN
 F 3 "~" H 5700 2400 50  0001 C CNN
@@ -361,11 +743,9 @@ Wire Wire Line
 Wire Wire Line
 	3200 2600 3200 2650
 Wire Wire Line
-	4000 4300 3550 4300
+	2700 4900 2650 4900
 Wire Wire Line
-	3250 4300 3200 4300
-Wire Wire Line
-	3200 4300 3200 4350
+	2650 4900 2650 4950
 Wire Wire Line
 	5300 4500 5550 4500
 Wire Wire Line
@@ -373,14 +753,53 @@ Wire Wire Line
 Wire Wire Line
 	5900 4500 5900 4550
 $Comp
-L power:GND #PWR0111
+L power:GND #PWR01208
 U 1 1 5CB99402
 P 3200 2650
-AR Path="/5CAFB649/5CB99402" Ref="#PWR0111"  Part="1" 
-AR Path="/5CAFBDFD/5CB99402" Ref="#PWR0123"  Part="1" 
-AR Path="/5CB48D70/5CB99402" Ref="#PWR08"  Part="1" 
-AR Path="/5CB4900E/5CB99402" Ref="#PWR021"  Part="1" 
-F 0 "#PWR0111" H 3200 2400 50  0001 C CNN
+AR Path="/5CAFB649/5CB99402" Ref="#PWR01208"  Part="1" 
+AR Path="/5CAFBDFD/5CB99402" Ref="#PWR01308"  Part="1" 
+AR Path="/5CB48D70/5CB99402" Ref="#PWR01408"  Part="1" 
+AR Path="/5CB4900E/5CB99402" Ref="#PWR01521"  Part="1" 
+AR Path="/5CBEA5F1/5CB99402" Ref="#PWR01108"  Part="1" 
+AR Path="/5CBF1A9C/5CB99402" Ref="#PWR01008"  Part="1" 
+AR Path="/5CBF7FFA/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB99402" Ref="#PWR02008"  Part="1" 
+AR Path="/5CC655D2/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB99402" Ref="#PWR01908"  Part="1" 
+AR Path="/5CC655E2/5CB99402" Ref="#PWR01808"  Part="1" 
+AR Path="/5CC65644/5CB99402" Ref="#PWR01708"  Part="1" 
+AR Path="/5CC65665/5CB99402" Ref="#PWR01608"  Part="1" 
+AR Path="/5CC75215/5CB99402" Ref="#PWR02408"  Part="1" 
+AR Path="/5CC7521D/5CB99402" Ref="#PWR02508"  Part="1" 
+AR Path="/5CC75225/5CB99402" Ref="#PWR02308"  Part="1" 
+AR Path="/5CC7522D/5CB99402" Ref="#PWR02208"  Part="1" 
+AR Path="/5CC7528F/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB99402" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB99402" Ref="#PWR02108"  Part="1" 
+F 0 "#PWR02108" H 3200 2400 50  0001 C CNN
 F 1 "GND" H 3205 2477 50  0000 C CNN
 F 2 "" H 3200 2650 50  0001 C CNN
 F 3 "" H 3200 2650 50  0001 C CNN
@@ -388,29 +807,107 @@ F 3 "" H 3200 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0112
+L power:GND #PWR01205
 U 1 1 5CB99CB4
-P 3200 4350
-AR Path="/5CAFB649/5CB99CB4" Ref="#PWR0112"  Part="1" 
-AR Path="/5CAFBDFD/5CB99CB4" Ref="#PWR0124"  Part="1" 
-AR Path="/5CB48D70/5CB99CB4" Ref="#PWR09"  Part="1" 
-AR Path="/5CB4900E/5CB99CB4" Ref="#PWR022"  Part="1" 
-F 0 "#PWR0112" H 3200 4100 50  0001 C CNN
-F 1 "GND" H 3205 4177 50  0000 C CNN
-F 2 "" H 3200 4350 50  0001 C CNN
-F 3 "" H 3200 4350 50  0001 C CNN
-	1    3200 4350
+P 2650 4950
+AR Path="/5CAFB649/5CB99CB4" Ref="#PWR01205"  Part="1" 
+AR Path="/5CAFBDFD/5CB99CB4" Ref="#PWR01305"  Part="1" 
+AR Path="/5CB48D70/5CB99CB4" Ref="#PWR01405"  Part="1" 
+AR Path="/5CB4900E/5CB99CB4" Ref="#PWR01518"  Part="1" 
+AR Path="/5CBEA5F1/5CB99CB4" Ref="#PWR01105"  Part="1" 
+AR Path="/5CBF1A9C/5CB99CB4" Ref="#PWR01005"  Part="1" 
+AR Path="/5CBF7FFA/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB99CB4" Ref="#PWR02005"  Part="1" 
+AR Path="/5CC655D2/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB99CB4" Ref="#PWR01905"  Part="1" 
+AR Path="/5CC655E2/5CB99CB4" Ref="#PWR01805"  Part="1" 
+AR Path="/5CC65644/5CB99CB4" Ref="#PWR01705"  Part="1" 
+AR Path="/5CC65665/5CB99CB4" Ref="#PWR01605"  Part="1" 
+AR Path="/5CC75215/5CB99CB4" Ref="#PWR02405"  Part="1" 
+AR Path="/5CC7521D/5CB99CB4" Ref="#PWR02505"  Part="1" 
+AR Path="/5CC75225/5CB99CB4" Ref="#PWR02305"  Part="1" 
+AR Path="/5CC7522D/5CB99CB4" Ref="#PWR02205"  Part="1" 
+AR Path="/5CC7528F/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB99CB4" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB99CB4" Ref="#PWR02105"  Part="1" 
+F 0 "#PWR02105" H 2650 4700 50  0001 C CNN
+F 1 "GND" H 2655 4777 50  0000 C CNN
+F 2 "" H 2650 4950 50  0001 C CNN
+F 3 "" H 2650 4950 50  0001 C CNN
+	1    2650 4950
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0113
+L power:GND #PWR01213
 U 1 1 5CB99D3F
 P 5900 4550
-AR Path="/5CAFB649/5CB99D3F" Ref="#PWR0113"  Part="1" 
-AR Path="/5CAFBDFD/5CB99D3F" Ref="#PWR0125"  Part="1" 
-AR Path="/5CB48D70/5CB99D3F" Ref="#PWR013"  Part="1" 
-AR Path="/5CB4900E/5CB99D3F" Ref="#PWR026"  Part="1" 
-F 0 "#PWR0113" H 5900 4300 50  0001 C CNN
+AR Path="/5CAFB649/5CB99D3F" Ref="#PWR01213"  Part="1" 
+AR Path="/5CAFBDFD/5CB99D3F" Ref="#PWR01313"  Part="1" 
+AR Path="/5CB48D70/5CB99D3F" Ref="#PWR01413"  Part="1" 
+AR Path="/5CB4900E/5CB99D3F" Ref="#PWR01526"  Part="1" 
+AR Path="/5CBEA5F1/5CB99D3F" Ref="#PWR01113"  Part="1" 
+AR Path="/5CBF1A9C/5CB99D3F" Ref="#PWR01013"  Part="1" 
+AR Path="/5CBF7FFA/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB99D3F" Ref="#PWR02013"  Part="1" 
+AR Path="/5CC655D2/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB99D3F" Ref="#PWR01913"  Part="1" 
+AR Path="/5CC655E2/5CB99D3F" Ref="#PWR01813"  Part="1" 
+AR Path="/5CC65644/5CB99D3F" Ref="#PWR01713"  Part="1" 
+AR Path="/5CC65665/5CB99D3F" Ref="#PWR01613"  Part="1" 
+AR Path="/5CC75215/5CB99D3F" Ref="#PWR02413"  Part="1" 
+AR Path="/5CC7521D/5CB99D3F" Ref="#PWR02513"  Part="1" 
+AR Path="/5CC75225/5CB99D3F" Ref="#PWR02313"  Part="1" 
+AR Path="/5CC7522D/5CB99D3F" Ref="#PWR02213"  Part="1" 
+AR Path="/5CC7528F/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB99D3F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB99D3F" Ref="#PWR02113"  Part="1" 
+F 0 "#PWR02113" H 5900 4300 50  0001 C CNN
 F 1 "GND" H 5905 4377 50  0000 C CNN
 F 2 "" H 5900 4550 50  0001 C CNN
 F 3 "" H 5900 4550 50  0001 C CNN
@@ -418,14 +915,53 @@ F 3 "" H 5900 4550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0114
+L power:GND #PWR01212
 U 1 1 5CB9A10F
 P 5900 2450
-AR Path="/5CAFB649/5CB9A10F" Ref="#PWR0114"  Part="1" 
-AR Path="/5CAFBDFD/5CB9A10F" Ref="#PWR0126"  Part="1" 
-AR Path="/5CB48D70/5CB9A10F" Ref="#PWR012"  Part="1" 
-AR Path="/5CB4900E/5CB9A10F" Ref="#PWR025"  Part="1" 
-F 0 "#PWR0114" H 5900 2200 50  0001 C CNN
+AR Path="/5CAFB649/5CB9A10F" Ref="#PWR01212"  Part="1" 
+AR Path="/5CAFBDFD/5CB9A10F" Ref="#PWR01312"  Part="1" 
+AR Path="/5CB48D70/5CB9A10F" Ref="#PWR01412"  Part="1" 
+AR Path="/5CB4900E/5CB9A10F" Ref="#PWR01525"  Part="1" 
+AR Path="/5CBEA5F1/5CB9A10F" Ref="#PWR01112"  Part="1" 
+AR Path="/5CBF1A9C/5CB9A10F" Ref="#PWR01012"  Part="1" 
+AR Path="/5CBF7FFA/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CB9A10F" Ref="#PWR02012"  Part="1" 
+AR Path="/5CC655D2/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CB9A10F" Ref="#PWR01912"  Part="1" 
+AR Path="/5CC655E2/5CB9A10F" Ref="#PWR01812"  Part="1" 
+AR Path="/5CC65644/5CB9A10F" Ref="#PWR01712"  Part="1" 
+AR Path="/5CC65665/5CB9A10F" Ref="#PWR01612"  Part="1" 
+AR Path="/5CC75215/5CB9A10F" Ref="#PWR02412"  Part="1" 
+AR Path="/5CC7521D/5CB9A10F" Ref="#PWR02512"  Part="1" 
+AR Path="/5CC75225/5CB9A10F" Ref="#PWR02312"  Part="1" 
+AR Path="/5CC7522D/5CB9A10F" Ref="#PWR02212"  Part="1" 
+AR Path="/5CC7528F/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CB9A10F" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CB9A10F" Ref="#PWR02112"  Part="1" 
+F 0 "#PWR02112" H 5900 2200 50  0001 C CNN
 F 1 "GND" H 5905 2277 50  0000 C CNN
 F 2 "" H 5900 2450 50  0001 C CNN
 F 3 "" H 5900 2450 50  0001 C CNN
@@ -435,89 +971,109 @@ $EndComp
 Wire Wire Line
 	5500 2600 5500 2700
 $Comp
-L power:GND #PWR0115
-U 1 1 5CBA118C
-P 2950 4050
-AR Path="/5CAFB649/5CBA118C" Ref="#PWR0115"  Part="1" 
-AR Path="/5CAFBDFD/5CBA118C" Ref="#PWR0127"  Part="1" 
-AR Path="/5CB48D70/5CBA118C" Ref="#PWR05"  Part="1" 
-AR Path="/5CB4900E/5CBA118C" Ref="#PWR018"  Part="1" 
-F 0 "#PWR0115" H 2950 3800 50  0001 C CNN
-F 1 "GND" H 2955 3877 50  0000 C CNN
-F 2 "" H 2950 4050 50  0001 C CNN
-F 3 "" H 2950 4050 50  0001 C CNN
-	1    2950 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0116
-U 1 1 5CBA147F
-P 3150 4050
-AR Path="/5CAFB649/5CBA147F" Ref="#PWR0116"  Part="1" 
-AR Path="/5CAFBDFD/5CBA147F" Ref="#PWR0128"  Part="1" 
-AR Path="/5CB48D70/5CBA147F" Ref="#PWR07"  Part="1" 
-AR Path="/5CB4900E/5CBA147F" Ref="#PWR020"  Part="1" 
-F 0 "#PWR0116" H 3150 3800 50  0001 C CNN
-F 1 "GND" H 3155 3877 50  0000 C CNN
-F 2 "" H 3150 4050 50  0001 C CNN
-F 3 "" H 3150 4050 50  0001 C CNN
-	1    3150 4050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5CBA1EF8
-P 2950 3350
-AR Path="/5CAFB649/5CBA1EF8" Ref="R1"  Part="1" 
-AR Path="/5CAFBDFD/5CBA1EF8" Ref="R7"  Part="1" 
-AR Path="/5CB48D70/5CBA1EF8" Ref="R13"  Part="1" 
-AR Path="/5CB4900E/5CBA1EF8" Ref="R19"  Part="1" 
-F 0 "R1" H 3020 3396 50  0000 L CNN
-F 1 "R" H 3020 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 3350 50  0001 C CNN
-F 3 "~" H 2950 3350 50  0001 C CNN
-	1    2950 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5CBA2D04
-P 3150 3350
-AR Path="/5CAFB649/5CBA2D04" Ref="R2"  Part="1" 
-AR Path="/5CAFBDFD/5CBA2D04" Ref="R8"  Part="1" 
-AR Path="/5CB48D70/5CBA2D04" Ref="R14"  Part="1" 
-AR Path="/5CB4900E/5CBA2D04" Ref="R20"  Part="1" 
-F 0 "R2" H 3220 3396 50  0000 L CNN
-F 1 "R" H 3220 3305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3080 3350 50  0001 C CNN
-F 3 "~" H 3150 3350 50  0001 C CNN
-	1    3150 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C3
+L Device:C C1202
 U 1 1 5CBA36F8
 P 2600 3550
-AR Path="/5CAFB649/5CBA36F8" Ref="C3"  Part="1" 
-AR Path="/5CAFBDFD/5CBA36F8" Ref="C9"  Part="1" 
-AR Path="/5CB48D70/5CBA36F8" Ref="C15"  Part="1" 
-AR Path="/5CB4900E/5CBA36F8" Ref="C21"  Part="1" 
-F 0 "C3" H 2715 3596 50  0000 L CNN
-F 1 "100nF" H 2715 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 3400 50  0001 C CNN
+AR Path="/5CAFB649/5CBA36F8" Ref="C1202"  Part="1" 
+AR Path="/5CAFBDFD/5CBA36F8" Ref="C1302"  Part="1" 
+AR Path="/5CB48D70/5CBA36F8" Ref="C1402"  Part="1" 
+AR Path="/5CB4900E/5CBA36F8" Ref="C1510"  Part="1" 
+AR Path="/5CBEA5F1/5CBA36F8" Ref="C1102"  Part="1" 
+AR Path="/5CBF1A9C/5CBA36F8" Ref="C1002"  Part="1" 
+AR Path="/5CBF7FFA/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CBA36F8" Ref="C2002"  Part="1" 
+AR Path="/5CC655D2/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CBA36F8" Ref="C1902"  Part="1" 
+AR Path="/5CC655E2/5CBA36F8" Ref="C1802"  Part="1" 
+AR Path="/5CC65644/5CBA36F8" Ref="C1702"  Part="1" 
+AR Path="/5CC65665/5CBA36F8" Ref="C1602"  Part="1" 
+AR Path="/5CC75215/5CBA36F8" Ref="C2402"  Part="1" 
+AR Path="/5CC7521D/5CBA36F8" Ref="C2502"  Part="1" 
+AR Path="/5CC75225/5CBA36F8" Ref="C2302"  Part="1" 
+AR Path="/5CC7522D/5CBA36F8" Ref="C2202"  Part="1" 
+AR Path="/5CC7528F/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CBA36F8" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CBA36F8" Ref="C2102"  Part="1" 
+F 0 "C1002" H 2715 3596 50  0000 L CNN
+F 1 "100nF 6,3V" H 2715 3505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 2638 3400 50  0001 C CNN
 F 3 "~" H 2600 3550 50  0001 C CNN
+F 4 "X5R 0201 CB 100N" H 2600 3550 50  0001 C CNN "Reichelt"
+F 5 "0,02" H 2600 3550 50  0001 C CNN "Preis"
 	1    2600 3550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0117
+L power:GND #PWR01203
 U 1 1 5CBA4977
 P 2600 3800
-AR Path="/5CAFB649/5CBA4977" Ref="#PWR0117"  Part="1" 
-AR Path="/5CAFBDFD/5CBA4977" Ref="#PWR0129"  Part="1" 
-AR Path="/5CB48D70/5CBA4977" Ref="#PWR03"  Part="1" 
-AR Path="/5CB4900E/5CBA4977" Ref="#PWR016"  Part="1" 
-F 0 "#PWR0117" H 2600 3550 50  0001 C CNN
+AR Path="/5CAFB649/5CBA4977" Ref="#PWR01203"  Part="1" 
+AR Path="/5CAFBDFD/5CBA4977" Ref="#PWR01303"  Part="1" 
+AR Path="/5CB48D70/5CBA4977" Ref="#PWR01403"  Part="1" 
+AR Path="/5CB4900E/5CBA4977" Ref="#PWR01516"  Part="1" 
+AR Path="/5CBEA5F1/5CBA4977" Ref="#PWR01103"  Part="1" 
+AR Path="/5CBF1A9C/5CBA4977" Ref="#PWR01003"  Part="1" 
+AR Path="/5CBF7FFA/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CBA4977" Ref="#PWR02003"  Part="1" 
+AR Path="/5CC655D2/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CBA4977" Ref="#PWR01903"  Part="1" 
+AR Path="/5CC655E2/5CBA4977" Ref="#PWR01803"  Part="1" 
+AR Path="/5CC65644/5CBA4977" Ref="#PWR01703"  Part="1" 
+AR Path="/5CC65665/5CBA4977" Ref="#PWR01603"  Part="1" 
+AR Path="/5CC75215/5CBA4977" Ref="#PWR02403"  Part="1" 
+AR Path="/5CC7521D/5CBA4977" Ref="#PWR02503"  Part="1" 
+AR Path="/5CC75225/5CBA4977" Ref="#PWR02303"  Part="1" 
+AR Path="/5CC7522D/5CBA4977" Ref="#PWR02203"  Part="1" 
+AR Path="/5CC7528F/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CBA4977" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CBA4977" Ref="#PWR02103"  Part="1" 
+F 0 "#PWR02103" H 2600 3550 50  0001 C CNN
 F 1 "GND" H 2605 3627 50  0000 C CNN
 F 2 "" H 2600 3800 50  0001 C CNN
 F 3 "" H 2600 3800 50  0001 C CNN
@@ -528,48 +1084,115 @@ Wire Wire Line
 	2600 3800 2600 3700
 Wire Wire Line
 	2600 3400 2600 3150
-Wire Wire Line
-	2600 3150 2950 3150
-Wire Wire Line
-	3150 3150 3150 3200
-Wire Wire Line
-	2950 3200 2950 3150
-Connection ~ 2950 3150
-Wire Wire Line
-	2950 3150 3150 3150
-Wire Wire Line
-	3500 3900 4000 3900
-Wire Wire Line
-	4000 4000 3450 4000
-Wire Wire Line
-	3450 4000 3450 3900
 $Comp
-L Device:C C6
+L Device:C C1207
 U 1 1 5CBD32BF
 P 3450 2850
-AR Path="/5CAFB649/5CBD32BF" Ref="C6"  Part="1" 
-AR Path="/5CAFBDFD/5CBD32BF" Ref="C12"  Part="1" 
-AR Path="/5CB48D70/5CBD32BF" Ref="C18"  Part="1" 
-AR Path="/5CB4900E/5CBD32BF" Ref="C24"  Part="1" 
-F 0 "C6" H 3565 2896 50  0000 L CNN
-F 1 "10nF" H 3565 2805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 3488 2700 50  0001 C CNN
+AR Path="/5CAFB649/5CBD32BF" Ref="C1207"  Part="1" 
+AR Path="/5CAFBDFD/5CBD32BF" Ref="C1307"  Part="1" 
+AR Path="/5CB48D70/5CBD32BF" Ref="C1407"  Part="1" 
+AR Path="/5CB4900E/5CBD32BF" Ref="C1515"  Part="1" 
+AR Path="/5CBEA5F1/5CBD32BF" Ref="C1107"  Part="1" 
+AR Path="/5CBF1A9C/5CBD32BF" Ref="C1007"  Part="1" 
+AR Path="/5CBF7FFA/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CBD32BF" Ref="C2007"  Part="1" 
+AR Path="/5CC655D2/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CBD32BF" Ref="C1907"  Part="1" 
+AR Path="/5CC655E2/5CBD32BF" Ref="C1807"  Part="1" 
+AR Path="/5CC65644/5CBD32BF" Ref="C1707"  Part="1" 
+AR Path="/5CC65665/5CBD32BF" Ref="C1607"  Part="1" 
+AR Path="/5CC75215/5CBD32BF" Ref="C2407"  Part="1" 
+AR Path="/5CC7521D/5CBD32BF" Ref="C2507"  Part="1" 
+AR Path="/5CC75225/5CBD32BF" Ref="C2307"  Part="1" 
+AR Path="/5CC7522D/5CBD32BF" Ref="C2207"  Part="1" 
+AR Path="/5CC7528F/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CBD32BF" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CBD32BF" Ref="C2107"  Part="1" 
+F 0 "C1007" H 3565 2896 50  0000 L CNN
+F 1 "10nF 50V" H 3565 2805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3488 2700 50  0001 C CNN
 F 3 "~" H 3450 2850 50  0001 C CNN
+F 4 " MUR GRM155R71H10" H 3450 2850 50  0001 C CNN "Reichelt"
+F 5 "0,02" H 3450 2850 50  0001 C CNN "Preis"
 	1    3450 2850
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L Device:C C1208
 U 1 1 5CBD3B7F
 P 3450 3250
-AR Path="/5CAFB649/5CBD3B7F" Ref="C7"  Part="1" 
-AR Path="/5CAFBDFD/5CBD3B7F" Ref="C13"  Part="1" 
-AR Path="/5CB48D70/5CBD3B7F" Ref="C19"  Part="1" 
-AR Path="/5CB4900E/5CBD3B7F" Ref="C25"  Part="1" 
-F 0 "C7" H 3565 3296 50  0000 L CNN
-F 1 "100nf" H 3565 3205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3488 3100 50  0001 C CNN
+AR Path="/5CAFB649/5CBD3B7F" Ref="C1208"  Part="1" 
+AR Path="/5CAFBDFD/5CBD3B7F" Ref="C1308"  Part="1" 
+AR Path="/5CB48D70/5CBD3B7F" Ref="C1408"  Part="1" 
+AR Path="/5CB4900E/5CBD3B7F" Ref="C1516"  Part="1" 
+AR Path="/5CBEA5F1/5CBD3B7F" Ref="C1108"  Part="1" 
+AR Path="/5CBF1A9C/5CBD3B7F" Ref="C1008"  Part="1" 
+AR Path="/5CBF7FFA/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CBD3B7F" Ref="C2008"  Part="1" 
+AR Path="/5CC655D2/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CBD3B7F" Ref="C1908"  Part="1" 
+AR Path="/5CC655E2/5CBD3B7F" Ref="C1808"  Part="1" 
+AR Path="/5CC65644/5CBD3B7F" Ref="C1708"  Part="1" 
+AR Path="/5CC65665/5CBD3B7F" Ref="C1608"  Part="1" 
+AR Path="/5CC75215/5CBD3B7F" Ref="C2408"  Part="1" 
+AR Path="/5CC7521D/5CBD3B7F" Ref="C2508"  Part="1" 
+AR Path="/5CC75225/5CBD3B7F" Ref="C2308"  Part="1" 
+AR Path="/5CC7522D/5CBD3B7F" Ref="C2208"  Part="1" 
+AR Path="/5CC7528F/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CBD3B7F" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CBD3B7F" Ref="C2108"  Part="1" 
+F 0 "C1008" H 3565 3296 50  0000 L CNN
+F 1 "100nF 16V" H 3565 3205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3488 3100 50  0001 C CNN
 F 3 "~" H 3450 3250 50  0001 C CNN
+F 4 "MUR GRM155R71C10" H 3450 3250 50  0001 C CNN "Reichelt"
+F 5 "0,05" H 3450 3250 50  0001 C CNN "Preis"
 	1    3450 3250
 	1    0    0    -1  
 $EndComp
@@ -594,44 +1217,165 @@ Wire Wire Line
 	3450 2350 3450 2050
 Connection ~ 3700 2350
 $Comp
-L Device:C C2
+L Device:C C1201
 U 1 1 5CC199C8
 P 2150 2250
-AR Path="/5CAFB649/5CC199C8" Ref="C2"  Part="1" 
-AR Path="/5CAFBDFD/5CC199C8" Ref="C8"  Part="1" 
-AR Path="/5CB48D70/5CC199C8" Ref="C14"  Part="1" 
-AR Path="/5CB4900E/5CC199C8" Ref="C20"  Part="1" 
-F 0 "C2" H 2265 2296 50  0000 L CNN
+AR Path="/5CAFB649/5CC199C8" Ref="C1201"  Part="1" 
+AR Path="/5CAFBDFD/5CC199C8" Ref="C1301"  Part="1" 
+AR Path="/5CB48D70/5CC199C8" Ref="C1401"  Part="1" 
+AR Path="/5CB4900E/5CC199C8" Ref="C1509"  Part="1" 
+AR Path="/5CBEA5F1/5CC199C8" Ref="C1101"  Part="1" 
+AR Path="/5CBF1A9C/5CC199C8" Ref="C1001"  Part="1" 
+AR Path="/5CBF7FFA/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CC199C8" Ref="C2001"  Part="1" 
+AR Path="/5CC655D2/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CC199C8" Ref="C1901"  Part="1" 
+AR Path="/5CC655E2/5CC199C8" Ref="C1801"  Part="1" 
+AR Path="/5CC65644/5CC199C8" Ref="C1701"  Part="1" 
+AR Path="/5CC65665/5CC199C8" Ref="C1601"  Part="1" 
+AR Path="/5CC75215/5CC199C8" Ref="C2401"  Part="1" 
+AR Path="/5CC7521D/5CC199C8" Ref="C2501"  Part="1" 
+AR Path="/5CC75225/5CC199C8" Ref="C2301"  Part="1" 
+AR Path="/5CC7522D/5CC199C8" Ref="C2201"  Part="1" 
+AR Path="/5CC7528F/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CC199C8" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CC199C8" Ref="C2101"  Part="1" 
+F 0 "C1001" H 2265 2296 50  0000 L CNN
 F 1 "100nF" H 2265 2205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P5.00mm" H 2188 2100 50  0001 C CNN
 F 3 "~" H 2150 2250 50  0001 C CNN
+F 4 "KERKO 100N" H 2150 2250 50  0001 C CNN "Reichelt"
+F 5 "0,05" H 2150 2250 50  0001 C CNN "Preis"
 	1    2150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C4
+L Device:C C1203
 U 1 1 5CC1A57F
 P 2650 2250
-AR Path="/5CAFB649/5CC1A57F" Ref="C4"  Part="1" 
-AR Path="/5CAFBDFD/5CC1A57F" Ref="C10"  Part="1" 
-AR Path="/5CB48D70/5CC1A57F" Ref="C16"  Part="1" 
-AR Path="/5CB4900E/5CC1A57F" Ref="C22"  Part="1" 
-F 0 "C4" H 2765 2296 50  0000 L CNN
+AR Path="/5CAFB649/5CC1A57F" Ref="C1203"  Part="1" 
+AR Path="/5CAFBDFD/5CC1A57F" Ref="C1303"  Part="1" 
+AR Path="/5CB48D70/5CC1A57F" Ref="C1403"  Part="1" 
+AR Path="/5CB4900E/5CC1A57F" Ref="C1511"  Part="1" 
+AR Path="/5CBEA5F1/5CC1A57F" Ref="C1103"  Part="1" 
+AR Path="/5CBF1A9C/5CC1A57F" Ref="C1003"  Part="1" 
+AR Path="/5CBF7FFA/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CC1A57F" Ref="C2003"  Part="1" 
+AR Path="/5CC655D2/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CC1A57F" Ref="C1903"  Part="1" 
+AR Path="/5CC655E2/5CC1A57F" Ref="C1803"  Part="1" 
+AR Path="/5CC65644/5CC1A57F" Ref="C1703"  Part="1" 
+AR Path="/5CC65665/5CC1A57F" Ref="C1603"  Part="1" 
+AR Path="/5CC75215/5CC1A57F" Ref="C2403"  Part="1" 
+AR Path="/5CC7521D/5CC1A57F" Ref="C2503"  Part="1" 
+AR Path="/5CC75225/5CC1A57F" Ref="C2303"  Part="1" 
+AR Path="/5CC7522D/5CC1A57F" Ref="C2203"  Part="1" 
+AR Path="/5CC7528F/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CC1A57F" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CC1A57F" Ref="C2103"  Part="1" 
+F 0 "C1003" H 2765 2296 50  0000 L CNN
 F 1 "100nF" H 2765 2205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D8.0mm_W5.0mm_P5.00mm" H 2688 2100 50  0001 C CNN
 F 3 "~" H 2650 2250 50  0001 C CNN
+F 4 "KERKO 100N" H 2650 2250 50  0001 C CNN "Reichelt"
+F 5 "0,05" H 2650 2250 50  0001 C CNN "Preis"
 	1    2650 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0118
+L power:GND #PWR01202
 U 1 1 5CC1B08E
 P 2150 2400
-AR Path="/5CAFB649/5CC1B08E" Ref="#PWR0118"  Part="1" 
-AR Path="/5CAFBDFD/5CC1B08E" Ref="#PWR0130"  Part="1" 
-AR Path="/5CB48D70/5CC1B08E" Ref="#PWR02"  Part="1" 
-AR Path="/5CB4900E/5CC1B08E" Ref="#PWR015"  Part="1" 
-F 0 "#PWR0118" H 2150 2150 50  0001 C CNN
+AR Path="/5CAFB649/5CC1B08E" Ref="#PWR01202"  Part="1" 
+AR Path="/5CAFBDFD/5CC1B08E" Ref="#PWR01302"  Part="1" 
+AR Path="/5CB48D70/5CC1B08E" Ref="#PWR01402"  Part="1" 
+AR Path="/5CB4900E/5CC1B08E" Ref="#PWR01515"  Part="1" 
+AR Path="/5CBEA5F1/5CC1B08E" Ref="#PWR01102"  Part="1" 
+AR Path="/5CBF1A9C/5CC1B08E" Ref="#PWR01002"  Part="1" 
+AR Path="/5CBF7FFA/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CC1B08E" Ref="#PWR02002"  Part="1" 
+AR Path="/5CC655D2/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CC1B08E" Ref="#PWR01902"  Part="1" 
+AR Path="/5CC655E2/5CC1B08E" Ref="#PWR01802"  Part="1" 
+AR Path="/5CC65644/5CC1B08E" Ref="#PWR01702"  Part="1" 
+AR Path="/5CC65665/5CC1B08E" Ref="#PWR01602"  Part="1" 
+AR Path="/5CC75215/5CC1B08E" Ref="#PWR02402"  Part="1" 
+AR Path="/5CC7521D/5CC1B08E" Ref="#PWR02502"  Part="1" 
+AR Path="/5CC75225/5CC1B08E" Ref="#PWR02302"  Part="1" 
+AR Path="/5CC7522D/5CC1B08E" Ref="#PWR02202"  Part="1" 
+AR Path="/5CC7528F/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CC1B08E" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CC1B08E" Ref="#PWR02102"  Part="1" 
+F 0 "#PWR02102" H 2150 2150 50  0001 C CNN
 F 1 "GND" H 2155 2227 50  0000 C CNN
 F 2 "" H 2150 2400 50  0001 C CNN
 F 3 "" H 2150 2400 50  0001 C CNN
@@ -639,14 +1383,53 @@ F 3 "" H 2150 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0119
+L power:GND #PWR01204
 U 1 1 5CC1B34B
 P 2650 2400
-AR Path="/5CAFB649/5CC1B34B" Ref="#PWR0119"  Part="1" 
-AR Path="/5CAFBDFD/5CC1B34B" Ref="#PWR0131"  Part="1" 
-AR Path="/5CB48D70/5CC1B34B" Ref="#PWR04"  Part="1" 
-AR Path="/5CB4900E/5CC1B34B" Ref="#PWR017"  Part="1" 
-F 0 "#PWR0119" H 2650 2150 50  0001 C CNN
+AR Path="/5CAFB649/5CC1B34B" Ref="#PWR01204"  Part="1" 
+AR Path="/5CAFBDFD/5CC1B34B" Ref="#PWR01304"  Part="1" 
+AR Path="/5CB48D70/5CC1B34B" Ref="#PWR01404"  Part="1" 
+AR Path="/5CB4900E/5CC1B34B" Ref="#PWR01517"  Part="1" 
+AR Path="/5CBEA5F1/5CC1B34B" Ref="#PWR01104"  Part="1" 
+AR Path="/5CBF1A9C/5CC1B34B" Ref="#PWR01004"  Part="1" 
+AR Path="/5CBF7FFA/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CC1B34B" Ref="#PWR02004"  Part="1" 
+AR Path="/5CC655D2/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CC1B34B" Ref="#PWR01904"  Part="1" 
+AR Path="/5CC655E2/5CC1B34B" Ref="#PWR01804"  Part="1" 
+AR Path="/5CC65644/5CC1B34B" Ref="#PWR01704"  Part="1" 
+AR Path="/5CC65665/5CC1B34B" Ref="#PWR01604"  Part="1" 
+AR Path="/5CC75215/5CC1B34B" Ref="#PWR02404"  Part="1" 
+AR Path="/5CC7521D/5CC1B34B" Ref="#PWR02504"  Part="1" 
+AR Path="/5CC75225/5CC1B34B" Ref="#PWR02304"  Part="1" 
+AR Path="/5CC7522D/5CC1B34B" Ref="#PWR02204"  Part="1" 
+AR Path="/5CC7528F/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CC1B34B" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CC1B34B" Ref="#PWR02104"  Part="1" 
+F 0 "#PWR02104" H 2650 2150 50  0001 C CNN
 F 1 "GND" H 2655 2227 50  0000 C CNN
 F 2 "" H 2650 2400 50  0001 C CNN
 F 3 "" H 2650 2400 50  0001 C CNN
@@ -654,30 +1437,109 @@ F 3 "" H 2650 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C5
+L Device:CP C1205
 U 1 1 5CC1B722
 P 3150 2250
-AR Path="/5CAFB649/5CC1B722" Ref="C5"  Part="1" 
-AR Path="/5CAFBDFD/5CC1B722" Ref="C11"  Part="1" 
-AR Path="/5CB48D70/5CC1B722" Ref="C17"  Part="1" 
-AR Path="/5CB4900E/5CC1B722" Ref="C23"  Part="1" 
-F 0 "C5" H 3268 2296 50  0000 L CNN
-F 1 "100uF" H 3268 2205 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm" H 3188 2100 50  0001 C CNN
+AR Path="/5CAFB649/5CC1B722" Ref="C1205"  Part="1" 
+AR Path="/5CAFBDFD/5CC1B722" Ref="C1305"  Part="1" 
+AR Path="/5CB48D70/5CC1B722" Ref="C1405"  Part="1" 
+AR Path="/5CB4900E/5CC1B722" Ref="C1513"  Part="1" 
+AR Path="/5CBEA5F1/5CC1B722" Ref="C1105"  Part="1" 
+AR Path="/5CBF1A9C/5CC1B722" Ref="C1005"  Part="1" 
+AR Path="/5CBF7FFA/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBF8002/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBF800A/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBF8012/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBF8074/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBF8095/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE1F3/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE1FB/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE203/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE20B/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE26D/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CBFE28E/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DCB3/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DCBB/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DCC3/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DCCB/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD2D/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD4E/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD6D/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD75/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD7D/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DD85/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DDBD/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC0DDD1/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC655CA/5CC1B722" Ref="C2005"  Part="1" 
+AR Path="/5CC655D2/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CC1B722" Ref="C1905"  Part="1" 
+AR Path="/5CC655E2/5CC1B722" Ref="C1805"  Part="1" 
+AR Path="/5CC65644/5CC1B722" Ref="C1705"  Part="1" 
+AR Path="/5CC65665/5CC1B722" Ref="C1605"  Part="1" 
+AR Path="/5CC75215/5CC1B722" Ref="C2405"  Part="1" 
+AR Path="/5CC7521D/5CC1B722" Ref="C2505"  Part="1" 
+AR Path="/5CC75225/5CC1B722" Ref="C2305"  Part="1" 
+AR Path="/5CC7522D/5CC1B722" Ref="C2205"  Part="1" 
+AR Path="/5CC7528F/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC752B0/5CC1B722" Ref="C?"  Part="1" 
+AR Path="/5CC4B548/5CC1B722" Ref="C2105"  Part="1" 
+F 0 "C1005" H 3268 2296 50  0000 L CNN
+F 1 "33uF 35V" H 3268 2205 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 3188 2100 50  0001 C CNN
 F 3 "~" H 3150 2250 50  0001 C CNN
-F 4 "FM-A 100U 50" H 3150 2250 50  0001 C CNN "Reichelt"
+F 4 "FM-A 33U 35" H 3150 2250 50  0001 C CNN "Reichelt"
+F 5 "0,11" H 3150 2250 50  0001 C CNN "Preis"
 	1    3150 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0120
+L power:GND #PWR01207
 U 1 1 5CC1C247
 P 3150 2400
-AR Path="/5CAFB649/5CC1C247" Ref="#PWR0120"  Part="1" 
-AR Path="/5CAFBDFD/5CC1C247" Ref="#PWR0132"  Part="1" 
-AR Path="/5CB48D70/5CC1C247" Ref="#PWR06"  Part="1" 
-AR Path="/5CB4900E/5CC1C247" Ref="#PWR019"  Part="1" 
-F 0 "#PWR0120" H 3150 2150 50  0001 C CNN
+AR Path="/5CAFB649/5CC1C247" Ref="#PWR01207"  Part="1" 
+AR Path="/5CAFBDFD/5CC1C247" Ref="#PWR01307"  Part="1" 
+AR Path="/5CB48D70/5CC1C247" Ref="#PWR01407"  Part="1" 
+AR Path="/5CB4900E/5CC1C247" Ref="#PWR01520"  Part="1" 
+AR Path="/5CBEA5F1/5CC1C247" Ref="#PWR01107"  Part="1" 
+AR Path="/5CBF1A9C/5CC1C247" Ref="#PWR01007"  Part="1" 
+AR Path="/5CBF7FFA/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8002/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF800A/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8012/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8074/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBF8095/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1F3/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE1FB/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE203/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE20B/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE26D/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CBFE28E/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCB3/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCBB/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCC3/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DCCB/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD2D/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD4E/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD6D/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD75/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD7D/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DD85/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDBD/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC0DDD1/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655CA/5CC1C247" Ref="#PWR02007"  Part="1" 
+AR Path="/5CC655D2/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CC1C247" Ref="#PWR01907"  Part="1" 
+AR Path="/5CC655E2/5CC1C247" Ref="#PWR01807"  Part="1" 
+AR Path="/5CC65644/5CC1C247" Ref="#PWR01707"  Part="1" 
+AR Path="/5CC65665/5CC1C247" Ref="#PWR01607"  Part="1" 
+AR Path="/5CC75215/5CC1C247" Ref="#PWR02407"  Part="1" 
+AR Path="/5CC7521D/5CC1C247" Ref="#PWR02507"  Part="1" 
+AR Path="/5CC75225/5CC1C247" Ref="#PWR02307"  Part="1" 
+AR Path="/5CC7522D/5CC1C247" Ref="#PWR02207"  Part="1" 
+AR Path="/5CC7528F/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC752B0/5CC1C247" Ref="#PWR?"  Part="1" 
+AR Path="/5CC4B548/5CC1C247" Ref="#PWR02107"  Part="1" 
+F 0 "#PWR02107" H 3150 2150 50  0001 C CNN
 F 1 "GND" H 3155 2227 50  0000 C CNN
 F 2 "" H 3150 2400 50  0001 C CNN
 F 3 "" H 3150 2400 50  0001 C CNN
@@ -699,67 +1561,219 @@ Wire Wire Line
 Connection ~ 2150 2050
 Wire Wire Line
 	2150 2050 2650 2050
-$Comp
-L Device:R_POT_TRIM RV1
-U 1 1 5CA34474
-P 2950 3700
-AR Path="/5CAFB649/5CA34474" Ref="RV1"  Part="1" 
-AR Path="/5CAFBDFD/5CA34474" Ref="RV3"  Part="1" 
-AR Path="/5CB48D70/5CA34474" Ref="RV5"  Part="1" 
-AR Path="/5CB4900E/5CA34474" Ref="RV7"  Part="1" 
-F 0 "RV1" H 2880 3746 50  0000 R CNN
-F 1 "R_POT_TRIM" H 2880 3655 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 2950 3700 50  0001 C CNN
-F 3 "~" H 2950 3700 50  0001 C CNN
-	1    2950 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_POT_TRIM RV2
-U 1 1 5CA34D30
-P 3150 3900
-AR Path="/5CAFB649/5CA34D30" Ref="RV2"  Part="1" 
-AR Path="/5CAFBDFD/5CA34D30" Ref="RV4"  Part="1" 
-AR Path="/5CB48D70/5CA34D30" Ref="RV6"  Part="1" 
-AR Path="/5CB4900E/5CA34D30" Ref="RV8"  Part="1" 
-F 0 "RV2" H 3080 3946 50  0000 R CNN
-F 1 "R_POT_TRIM" H 3080 3855 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Vishay_43_Horizontal" H 3150 3900 50  0001 C CNN
-F 3 "~" H 3150 3900 50  0001 C CNN
-	1    3150 3900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 3550 2950 3500
-Wire Wire Line
-	2950 3850 2950 4050
-Wire Wire Line
-	3150 3500 3150 3750
-Wire Wire Line
-	3300 3900 3450 3900
-Wire Wire Line
-	3100 3700 3500 3700
-Wire Wire Line
-	3500 3700 3500 3900
 Wire Wire Line
 	3650 3050 3200 3050
 Wire Wire Line
 	3200 3050 3200 3150
-Wire Wire Line
-	3200 3150 3150 3150
-Connection ~ 3150 3150
 Wire Wire Line
 	1950 2050 2150 2050
 Wire Wire Line
 	5800 2800 5300 2800
 Wire Wire Line
 	5300 2900 5800 2900
-Text HLabel 5800 2700 2    50   Input ~ 0
-CS
 Wire Wire Line
 	5500 2700 5800 2700
 Wire Wire Line
 	5800 4000 5300 4000
+Wire Wire Line
+	2600 3150 3200 3150
+Wire Wire Line
+	4000 3900 3300 3900
+Wire Wire Line
+	4000 4000 3400 4000
+Wire Wire Line
+	4000 4300 3650 4300
+Wire Wire Line
+	3650 4300 3650 4900
+$Comp
+L Device:C C1406
+U 1 1 5CCBF437
+P 3400 4350
+AR Path="/5CB48D70/5CCBF437" Ref="C1406"  Part="1" 
+AR Path="/5CB4900E/5CCBF437" Ref="C1514"  Part="1" 
+AR Path="/5CAFBDFD/5CCBF437" Ref="C1306"  Part="1" 
+AR Path="/5CAFB649/5CCBF437" Ref="C1206"  Part="1" 
+AR Path="/5CBEA5F1/5CCBF437" Ref="C1106"  Part="1" 
+AR Path="/5CBF1A9C/5CCBF437" Ref="C1006"  Part="1" 
+AR Path="/5CC655CA/5CCBF437" Ref="C2006"  Part="1" 
+AR Path="/5CC655D2/5CCBF437" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CCBF437" Ref="C1906"  Part="1" 
+AR Path="/5CC655E2/5CCBF437" Ref="C1806"  Part="1" 
+AR Path="/5CC65644/5CCBF437" Ref="C1706"  Part="1" 
+AR Path="/5CC65665/5CCBF437" Ref="C1606"  Part="1" 
+AR Path="/5CC75215/5CCBF437" Ref="C2406"  Part="1" 
+AR Path="/5CC7521D/5CCBF437" Ref="C2506"  Part="1" 
+AR Path="/5CC75225/5CCBF437" Ref="C2306"  Part="1" 
+AR Path="/5CC7522D/5CCBF437" Ref="C2206"  Part="1" 
+AR Path="/5CC4B548/5CCBF437" Ref="C2106"  Part="1" 
+F 0 "C1006" H 3515 4396 50  0000 L CNN
+F 1 "1nF 25V" H 3515 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3438 4200 50  0001 C CNN
+F 3 "~" H 3400 4350 50  0001 C CNN
+F 4 "X7R 0201 CE 1,0N" H 3400 4350 50  0001 C CNN "Reichelt"
+F 5 "0,02" H 3400 4350 50  0001 C CNN "Preis"
+	1    3400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C1404
+U 1 1 5CCBF8F9
+P 3050 4350
+AR Path="/5CB48D70/5CCBF8F9" Ref="C1404"  Part="1" 
+AR Path="/5CB4900E/5CCBF8F9" Ref="C1512"  Part="1" 
+AR Path="/5CAFBDFD/5CCBF8F9" Ref="C1304"  Part="1" 
+AR Path="/5CAFB649/5CCBF8F9" Ref="C1204"  Part="1" 
+AR Path="/5CBEA5F1/5CCBF8F9" Ref="C1104"  Part="1" 
+AR Path="/5CBF1A9C/5CCBF8F9" Ref="C1004"  Part="1" 
+AR Path="/5CC655CA/5CCBF8F9" Ref="C2004"  Part="1" 
+AR Path="/5CC655D2/5CCBF8F9" Ref="C?"  Part="1" 
+AR Path="/5CC655DA/5CCBF8F9" Ref="C1904"  Part="1" 
+AR Path="/5CC655E2/5CCBF8F9" Ref="C1804"  Part="1" 
+AR Path="/5CC65644/5CCBF8F9" Ref="C1704"  Part="1" 
+AR Path="/5CC65665/5CCBF8F9" Ref="C1604"  Part="1" 
+AR Path="/5CC75215/5CCBF8F9" Ref="C2404"  Part="1" 
+AR Path="/5CC7521D/5CCBF8F9" Ref="C2504"  Part="1" 
+AR Path="/5CC75225/5CCBF8F9" Ref="C2304"  Part="1" 
+AR Path="/5CC7522D/5CCBF8F9" Ref="C2204"  Part="1" 
+AR Path="/5CC4B548/5CCBF8F9" Ref="C2104"  Part="1" 
+F 0 "C1004" H 3165 4396 50  0000 L CNN
+F 1 "1nF 25V" H 3165 4305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3088 4200 50  0001 C CNN
+F 3 "~" H 3050 4350 50  0001 C CNN
+F 4 "X7R 0201 CE 1,0N" H 3050 4350 50  0001 C CNN "Reichelt"
+F 5 "0,02" H 3050 4350 50  0001 C CNN "Preis"
+	1    3050 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01409
+U 1 1 5CCBFD0C
+P 3400 4500
+AR Path="/5CB48D70/5CCBFD0C" Ref="#PWR01409"  Part="1" 
+AR Path="/5CB4900E/5CCBFD0C" Ref="#PWR01522"  Part="1" 
+AR Path="/5CAFBDFD/5CCBFD0C" Ref="#PWR01309"  Part="1" 
+AR Path="/5CAFB649/5CCBFD0C" Ref="#PWR01209"  Part="1" 
+AR Path="/5CBEA5F1/5CCBFD0C" Ref="#PWR01109"  Part="1" 
+AR Path="/5CBF1A9C/5CCBFD0C" Ref="#PWR01009"  Part="1" 
+AR Path="/5CC655CA/5CCBFD0C" Ref="#PWR02009"  Part="1" 
+AR Path="/5CC655D2/5CCBFD0C" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CCBFD0C" Ref="#PWR01909"  Part="1" 
+AR Path="/5CC655E2/5CCBFD0C" Ref="#PWR01809"  Part="1" 
+AR Path="/5CC65644/5CCBFD0C" Ref="#PWR01709"  Part="1" 
+AR Path="/5CC65665/5CCBFD0C" Ref="#PWR01609"  Part="1" 
+AR Path="/5CC75215/5CCBFD0C" Ref="#PWR02409"  Part="1" 
+AR Path="/5CC7521D/5CCBFD0C" Ref="#PWR02509"  Part="1" 
+AR Path="/5CC75225/5CCBFD0C" Ref="#PWR02309"  Part="1" 
+AR Path="/5CC7522D/5CCBFD0C" Ref="#PWR02209"  Part="1" 
+AR Path="/5CC4B548/5CCBFD0C" Ref="#PWR02109"  Part="1" 
+F 0 "#PWR02109" H 3400 4250 50  0001 C CNN
+F 1 "GND" H 3405 4327 50  0000 C CNN
+F 2 "" H 3400 4500 50  0001 C CNN
+F 3 "" H 3400 4500 50  0001 C CNN
+	1    3400 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01406
+U 1 1 5CCBFDA5
+P 3050 4500
+AR Path="/5CB48D70/5CCBFDA5" Ref="#PWR01406"  Part="1" 
+AR Path="/5CB4900E/5CCBFDA5" Ref="#PWR01519"  Part="1" 
+AR Path="/5CAFBDFD/5CCBFDA5" Ref="#PWR01306"  Part="1" 
+AR Path="/5CAFB649/5CCBFDA5" Ref="#PWR01206"  Part="1" 
+AR Path="/5CBEA5F1/5CCBFDA5" Ref="#PWR01106"  Part="1" 
+AR Path="/5CBF1A9C/5CCBFDA5" Ref="#PWR01006"  Part="1" 
+AR Path="/5CC655CA/5CCBFDA5" Ref="#PWR02006"  Part="1" 
+AR Path="/5CC655D2/5CCBFDA5" Ref="#PWR?"  Part="1" 
+AR Path="/5CC655DA/5CCBFDA5" Ref="#PWR01906"  Part="1" 
+AR Path="/5CC655E2/5CCBFDA5" Ref="#PWR01806"  Part="1" 
+AR Path="/5CC65644/5CCBFDA5" Ref="#PWR01706"  Part="1" 
+AR Path="/5CC65665/5CCBFDA5" Ref="#PWR01606"  Part="1" 
+AR Path="/5CC75215/5CCBFDA5" Ref="#PWR02406"  Part="1" 
+AR Path="/5CC7521D/5CCBFDA5" Ref="#PWR02506"  Part="1" 
+AR Path="/5CC75225/5CCBFDA5" Ref="#PWR02306"  Part="1" 
+AR Path="/5CC7522D/5CCBFDA5" Ref="#PWR02206"  Part="1" 
+AR Path="/5CC4B548/5CCBFDA5" Ref="#PWR02106"  Part="1" 
+F 0 "#PWR02106" H 3050 4250 50  0001 C CNN
+F 1 "GND" H 3055 4327 50  0000 C CNN
+F 2 "" H 3050 4500 50  0001 C CNN
+F 3 "" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 4900 3650 4900
+Wire Wire Line
+	3400 4200 3400 4000
+Connection ~ 3400 4000
+Wire Wire Line
+	3050 4200 3050 4150
+Wire Wire Line
+	3050 4150 3300 4150
+Wire Wire Line
+	3300 4150 3300 4000
+Connection ~ 3300 3900
+Wire Wire Line
+	3300 3900 3200 3900
+Text Label 5550 2700 0    50   ~ 0
+Steuer4
+Text Label 5500 2800 0    50   ~ 0
+Steuer0
+Text Label 5500 2900 0    50   ~ 0
+Steuer1
+Text Label 5400 3800 0    50   ~ 0
+Steuer3
+Text Label 5400 4000 0    50   ~ 0
+Steuer2
+Text Label 3550 3900 0    50   ~ 0
+Steuer5
+Text Label 3550 4000 0    50   ~ 0
+Steuer6
+Entry Wire Line
+	5800 4000 5900 3900
+Entry Wire Line
+	5800 3800 5900 3700
+Entry Wire Line
+	5800 2700 5900 2800
+Entry Wire Line
+	5800 2800 5900 2900
+Entry Wire Line
+	5800 2900 5900 3000
+Entry Wire Line
+	3200 3900 3100 3800
+Wire Wire Line
+	3300 4000 3300 3900
+Entry Wire Line
+	3200 4000 3100 3900
+Wire Wire Line
+	3200 4000 3400 4000
+Wire Bus Line
+	5900 2700 6200 2700
+Wire Bus Line
+	6200 2700 6200 1350
+Wire Bus Line
+	6200 1350 2950 1350
+Wire Bus Line
+	2950 1350 2950 3450
+Wire Bus Line
+	2950 3450 3100 3450
+Wire Bus Line
+	6200 2700 6750 2700
+Connection ~ 6200 2700
+Text HLabel 6750 2700 2    50   Input ~ 0
+Steuer[0..6]
 Text HLabel 5800 4100 2    50   Input ~ 0
 Uebernahme
+Text Label 3600 2600 0    50   ~ 0
+MAR
+Text Label 5350 2400 0    50   ~ 0
+MBR
+Text Label 3200 4900 0    50   ~ 0
+MDR
+Text Label 5350 4500 0    50   ~ 0
+MCR
+Wire Bus Line
+	3100 3450 3100 3900
+Wire Bus Line
+	5900 2700 5900 3900
 $EndSCHEMATC
