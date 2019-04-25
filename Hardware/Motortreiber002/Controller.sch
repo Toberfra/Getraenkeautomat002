@@ -30,17 +30,6 @@ Text HLabel 6200 2600 2    50   Output ~ 0
 Uebernahme3
 Text HLabel 6200 2700 2    50   Output ~ 0
 Uebernahme4
-$Comp
-L MCU_Microchip_ATmega:ATmega64-16AU U5
-U 1 1 5CB2CDF3
-P 5600 3700
-F 0 "U5" H 5600 1611 50  0000 C CNN
-F 1 "ATmega64-16AU" H 5600 1520 50  0000 C CNN
-F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 5600 3700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2490-8-bit-avr-microcontroller-atmega64-l_datasheet.pdf" H 5600 3700 50  0001 C CNN
-	1    5600 3700
-	1    0    0    -1  
-$EndComp
 Text HLabel 6200 2300 2    50   Output ~ 0
 CS4
 Text HLabel 6200 2200 2    50   Output ~ 0
@@ -49,4 +38,15 @@ Text HLabel 6200 2100 2    50   Output ~ 0
 CS2
 Text HLabel 6200 2000 2    50   Output ~ 0
 CS1
+$Comp
+L MCU_Microchip_ATmega:ATxmega384C3-AU U?
+U 1 1 5CB63117
+P 4850 3450
+F 0 "U?" H 4850 1561 50  0000 C CNN
+F 1 "ATxmega384C3-AU" H 4850 1470 50  0000 C CNN
+F 2 "Package_QFP:TQFP-64_14x14mm_P0.8mm" H 4850 3450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-8361-8-and-16-bit-AVR-XMEGA-Microcontrollers-ATxmega384C3_Datasheet.pdf" H 4850 3450 50  0001 C CNN
+	1    4850 3450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
