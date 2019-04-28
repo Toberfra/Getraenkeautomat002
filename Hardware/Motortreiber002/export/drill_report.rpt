@@ -1,0 +1,25 @@
+Drill report for /home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motorteiber002.kicad_pcb
+Created on So 28 Apr 2019 22:06:59 CEST
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'Motorteiber002-PTH-drl.gbr' contains
+    plated through holes:
+    =============================================================
+    T1  0,40mm  0,016"  (242 holes)
+    T2  0,80mm  0,031"  (160 holes)
+    T3  1,00mm  0,039"  (64 holes)
+    T4  1,20mm  0,047"  (256 holes)
+
+    Total plated holes count 722
+
+
+Drill file 'Motorteiber002-NPTH-drl.gbr' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

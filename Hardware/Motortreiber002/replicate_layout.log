@@ -1,0 +1,371 @@
+04-27 18:23:38 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 18:23:39 replicate_layout.action_replicate_layout 152:Preparing replicator with J1901 as a reference
+04-27 18:23:39 replicate_layout.replicatelayout 193:getting project hierarchy from schematics
+04-27 18:23:39 replicate_layout.replicatelayout 195:Project hierarchy looks like:
+{'5CC75215': ['Motortreiber14', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC65644': ['Motortreiber7', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB48D70': ['Motortreiber4', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7522D': ['Motortreiber12', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFB649': ['Motortreiber2', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7521D': ['Motortreiber15', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655DA': ['Motortreiber9', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC4B548': ['Motortreiber11', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAF974C': ['Stromversorgung', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Stromversorgung.sch'], '5CC65665': ['Motortreiber6', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB4900E': ['Motortreiber5', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBEA5F1': ['Motortreiber1', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB22923': ['Controller', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Controller.sch'], '5CC655CA': ['Motortreiber10', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655E2': ['Motortreiber8', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC75225': ['Motortreiber13', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBF1A9C': ['Motortreiber0', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFBDFD': ['Motortreiber3', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch']}
+04-27 18:23:39 replicate_layout.replicatelayout 203:getting a list of all footprints on board
+04-27 18:23:39 replicate_layout.action_replicate_layout 176:Pivot footprint is u'J1901'
+Located on:['Motortreiber9']
+With filenames:[u'Motortreiber.sch']
+With sheet_id:['Motortreiber9']
+04-27 18:23:39 replicate_layout.action_replicate_layout 180:Corresponding footprints are 
+[(u'J2501', ['Motortreiber15']), (u'J2401', ['Motortreiber14']), (u'J2301', ['Motortreiber13']), (u'J2201', ['Motortreiber12']), (u'J2101', ['Motortreiber11']), (u'J2001', ['Motortreiber10']), (u'J1801', ['Motortreiber8']), (u'J1701', ['Motortreiber7']), (u'J1601', ['Motortreiber6']), (u'J1503', ['Motortreiber5']), (u'J1401', ['Motortreiber4']), (u'J1301', ['Motortreiber3']), (u'J1201', ['Motortreiber2']), (u'J1101', ['Motortreiber1']), (u'J1001', ['Motortreiber0']), (u'J1901', ['Motortreiber9'])]
+04-27 18:23:39 replicate_layout.action_replicate_layout 192:Showing dialog
+04-27 18:23:39 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber9', file:u'Motortreiber.sch'
+04-27 18:23:39 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber9']
+04-27 18:23:39 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1503', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 18:23:39 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 18:23:39 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 18:23:39 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 18:23:39 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8']]
+04-27 18:24:37 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber9', file:u'Motortreiber.sch'
+04-27 18:24:37 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber9']
+04-27 18:24:37 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1503', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 18:24:37 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 18:24:37 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 18:24:37 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 18:24:37 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8']]
+04-27 18:24:37 replicate_layout.action_replicate_layout 220:Replicating layout
+04-27 18:24:37 replicate_layout.replicatelayout 989:Starting replication of sheets: [['Motortreiber11']]
+on level: ['Motortreiber9']
+with tracks=True, zone=True, text=True, containing=False, remov=False
+04-27 18:24:37 replicate_layout.replicatelayout 526:Getting the list of pivot footprints
+04-27 18:24:37 replicate_layout.replicatelayout 529:Getting the list of all the remaining footprints
+04-27 18:24:37 replicate_layout.replicatelayout 532:Getting nets local to pivot footprints
+04-27 18:24:38 replicate_layout.replicatelayout 535:Getting pivot bounding box
+04-27 18:24:38 replicate_layout.replicatelayout 538:Getting pivot tracks
+04-27 18:24:38 replicate_layout.replicatelayout 541:Getting pivot zones
+04-27 18:24:38 replicate_layout.replicatelayout 544:Getting pivot text items
+04-27 18:24:38 replicate_layout.replicatelayout 547:Getting pivot text items
+04-27 18:24:38 replicate_layout.replicatelayout 551:Replicating footprints
+04-27 18:24:38 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber11']
+04-27 18:24:38 replicate_layout.replicatelayout 657:Replicating tracks
+04-27 18:24:38 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber11']
+04-27 18:24:39 replicate_layout.replicatelayout 755:Replicating zones
+04-27 18:24:39 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber11']
+04-27 18:24:39 replicate_layout.replicatelayout 855:Replicating text
+04-27 18:24:39 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber11']
+04-27 18:24:39 replicate_layout.replicatelayout 876:Replicating drawings
+04-27 18:24:39 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber11']
+04-27 18:24:39 replicate_layout.action_replicate_layout 230:Replication complete
+04-27 19:01:14 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 19:01:14 replicate_layout.action_replicate_layout 152:Preparing replicator with J1901 as a reference
+04-27 19:01:14 replicate_layout.replicatelayout 193:getting project hierarchy from schematics
+04-27 19:01:14 replicate_layout.replicatelayout 195:Project hierarchy looks like:
+{'5CC75215': ['Motortreiber14', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC65644': ['Motortreiber7', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB48D70': ['Motortreiber4', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7522D': ['Motortreiber12', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFB649': ['Motortreiber2', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7521D': ['Motortreiber15', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655DA': ['Motortreiber9', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC4B548': ['Motortreiber11', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAF974C': ['Stromversorgung', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Stromversorgung.sch'], '5CC65665': ['Motortreiber6', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB4900E': ['Motortreiber5', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBEA5F1': ['Motortreiber1', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB22923': ['Controller', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Controller.sch'], '5CC655CA': ['Motortreiber10', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655E2': ['Motortreiber8', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC75225': ['Motortreiber13', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBF1A9C': ['Motortreiber0', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFBDFD': ['Motortreiber3', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch']}
+04-27 19:01:14 replicate_layout.replicatelayout 203:getting a list of all footprints on board
+04-27 19:01:14 replicate_layout.action_replicate_layout 176:Pivot footprint is u'J1901'
+Located on:['Motortreiber9']
+With filenames:[u'Motortreiber.sch']
+With sheet_id:['Motortreiber9']
+04-27 19:01:14 replicate_layout.action_replicate_layout 180:Corresponding footprints are 
+[(u'J2501', ['Motortreiber15']), (u'J2401', ['Motortreiber14']), (u'J2301', ['Motortreiber13']), (u'J2201', ['Motortreiber12']), (u'J2101', ['Motortreiber11']), (u'J2001', ['Motortreiber10']), (u'J1801', ['Motortreiber8']), (u'J1701', ['Motortreiber7']), (u'J1601', ['Motortreiber6']), (u'J1501', ['Motortreiber5']), (u'J1401', ['Motortreiber4']), (u'J1301', ['Motortreiber3']), (u'J1201', ['Motortreiber2']), (u'J1101', ['Motortreiber1']), (u'J1001', ['Motortreiber0']), (u'J1901', ['Motortreiber9'])]
+04-27 19:01:14 replicate_layout.action_replicate_layout 192:Showing dialog
+04-27 19:01:15 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber9', file:u'Motortreiber.sch'
+04-27 19:01:15 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber9']
+04-27 19:01:15 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:01:15 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:01:15 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:01:15 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:01:15 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8']]
+04-27 19:01:21 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber9', file:u'Motortreiber.sch'
+04-27 19:01:21 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber9']
+04-27 19:01:21 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:01:21 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:01:21 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:01:21 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:01:21 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8']]
+04-27 19:01:21 replicate_layout.action_replicate_layout 220:Replicating layout
+04-27 19:01:21 replicate_layout.replicatelayout 989:Starting replication of sheets: [['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8']]
+on level: ['Motortreiber9']
+with tracks=True, zone=True, text=True, containing=False, remov=False
+04-27 19:01:21 replicate_layout.replicatelayout 526:Getting the list of pivot footprints
+04-27 19:01:21 replicate_layout.replicatelayout 529:Getting the list of all the remaining footprints
+04-27 19:01:21 replicate_layout.replicatelayout 532:Getting nets local to pivot footprints
+04-27 19:01:22 replicate_layout.replicatelayout 535:Getting pivot bounding box
+04-27 19:01:22 replicate_layout.replicatelayout 538:Getting pivot tracks
+04-27 19:01:22 replicate_layout.replicatelayout 541:Getting pivot zones
+04-27 19:01:22 replicate_layout.replicatelayout 544:Getting pivot text items
+04-27 19:01:22 replicate_layout.replicatelayout 547:Getting pivot text items
+04-27 19:01:22 replicate_layout.replicatelayout 551:Replicating footprints
+04-27 19:01:22 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber0']
+04-27 19:01:22 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber1']
+04-27 19:01:22 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber10']
+04-27 19:01:22 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber11']
+04-27 19:01:23 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber12']
+04-27 19:01:23 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber13']
+04-27 19:01:23 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber14']
+04-27 19:01:23 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber15']
+04-27 19:01:24 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber2']
+04-27 19:01:24 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber3']
+04-27 19:01:24 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber4']
+04-27 19:01:24 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber5']
+04-27 19:01:25 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber6']
+04-27 19:01:25 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber7']
+04-27 19:01:25 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber8']
+04-27 19:01:25 replicate_layout.replicatelayout 657:Replicating tracks
+04-27 19:01:25 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber0']
+04-27 19:01:26 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber1']
+04-27 19:01:26 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber10']
+04-27 19:01:26 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber11']
+04-27 19:01:26 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber12']
+04-27 19:01:27 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber13']
+04-27 19:01:27 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber14']
+04-27 19:01:28 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber15']
+04-27 19:01:28 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber2']
+04-27 19:01:29 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber3']
+04-27 19:01:29 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber4']
+04-27 19:01:30 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber5']
+04-27 19:01:30 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber6']
+04-27 19:01:31 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber7']
+04-27 19:01:31 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber8']
+04-27 19:01:32 replicate_layout.replicatelayout 755:Replicating zones
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber0']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber1']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber10']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber11']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber12']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber13']
+04-27 19:01:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber14']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber15']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber2']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber3']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber4']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber5']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber6']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber7']
+04-27 19:01:33 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber8']
+04-27 19:01:33 replicate_layout.replicatelayout 855:Replicating text
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber0']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber1']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber10']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber11']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber12']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber13']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber14']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber15']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber2']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber3']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber4']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber5']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber6']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber7']
+04-27 19:01:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber8']
+04-27 19:01:33 replicate_layout.replicatelayout 876:Replicating drawings
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber0']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber1']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber10']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber11']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber12']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber13']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber14']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber15']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber2']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber3']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber4']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber5']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber6']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber7']
+04-27 19:01:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber8']
+04-27 19:01:33 replicate_layout.action_replicate_layout 230:Replication complete
+04-27 19:05:06 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 19:05:40 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 19:05:40 replicate_layout.action_replicate_layout 152:Preparing replicator with J1801 as a reference
+04-27 19:05:40 replicate_layout.replicatelayout 193:getting project hierarchy from schematics
+04-27 19:05:40 replicate_layout.replicatelayout 195:Project hierarchy looks like:
+{'5CC75215': ['Motortreiber14', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC65644': ['Motortreiber7', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB48D70': ['Motortreiber4', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7522D': ['Motortreiber12', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFB649': ['Motortreiber2', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7521D': ['Motortreiber15', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655DA': ['Motortreiber9', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC4B548': ['Motortreiber11', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAF974C': ['Stromversorgung', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Stromversorgung.sch'], '5CC65665': ['Motortreiber6', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB4900E': ['Motortreiber5', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBEA5F1': ['Motortreiber1', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB22923': ['Controller', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Controller.sch'], '5CC655CA': ['Motortreiber10', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655E2': ['Motortreiber8', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC75225': ['Motortreiber13', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBF1A9C': ['Motortreiber0', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFBDFD': ['Motortreiber3', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch']}
+04-27 19:05:40 replicate_layout.replicatelayout 203:getting a list of all footprints on board
+04-27 19:05:40 replicate_layout.action_replicate_layout 176:Pivot footprint is u'J1801'
+Located on:['Motortreiber8']
+With filenames:[u'Motortreiber.sch']
+With sheet_id:['Motortreiber8']
+04-27 19:05:40 replicate_layout.action_replicate_layout 180:Corresponding footprints are 
+[(u'J2501', ['Motortreiber15']), (u'J2401', ['Motortreiber14']), (u'J2301', ['Motortreiber13']), (u'J2201', ['Motortreiber12']), (u'J2101', ['Motortreiber11']), (u'J2001', ['Motortreiber10']), (u'J1801', ['Motortreiber8']), (u'J1701', ['Motortreiber7']), (u'J1601', ['Motortreiber6']), (u'J1501', ['Motortreiber5']), (u'J1401', ['Motortreiber4']), (u'J1301', ['Motortreiber3']), (u'J1201', ['Motortreiber2']), (u'J1101', ['Motortreiber1']), (u'J1001', ['Motortreiber0']), (u'J1901', ['Motortreiber9'])]
+04-27 19:05:40 replicate_layout.action_replicate_layout 192:Showing dialog
+04-27 19:05:41 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:05:41 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:05:41 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:05:41 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:05:41 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:05:41 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:05:41 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:05:45 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:05:45 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:05:45 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:05:45 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:05:45 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:05:45 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:05:45 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:05:45 replicate_layout.action_replicate_layout 220:Replicating layout
+04-27 19:05:45 replicate_layout.replicatelayout 989:Starting replication of sheets: [['Motortreiber5']]
+on level: ['Motortreiber8']
+with tracks=True, zone=True, text=True, containing=True, remov=False
+04-27 19:05:45 replicate_layout.replicatelayout 526:Getting the list of pivot footprints
+04-27 19:05:45 replicate_layout.replicatelayout 529:Getting the list of all the remaining footprints
+04-27 19:05:45 replicate_layout.replicatelayout 532:Getting nets local to pivot footprints
+04-27 19:05:46 replicate_layout.replicatelayout 535:Getting pivot bounding box
+04-27 19:05:46 replicate_layout.replicatelayout 538:Getting pivot tracks
+04-27 19:05:47 replicate_layout.replicatelayout 541:Getting pivot zones
+04-27 19:05:47 replicate_layout.replicatelayout 544:Getting pivot text items
+04-27 19:05:47 replicate_layout.replicatelayout 547:Getting pivot text items
+04-27 19:05:47 replicate_layout.replicatelayout 551:Replicating footprints
+04-27 19:05:47 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber5']
+04-27 19:05:48 replicate_layout.replicatelayout 657:Replicating tracks
+04-27 19:05:48 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber5']
+04-27 19:05:48 replicate_layout.replicatelayout 755:Replicating zones
+04-27 19:05:48 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber5']
+04-27 19:05:48 replicate_layout.replicatelayout 855:Replicating text
+04-27 19:05:48 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber5']
+04-27 19:05:48 replicate_layout.replicatelayout 876:Replicating drawings
+04-27 19:05:48 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber5']
+04-27 19:05:48 replicate_layout.action_replicate_layout 230:Replication complete
+04-27 19:08:18 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 19:08:18 replicate_layout.action_replicate_layout 152:Preparing replicator with J1801 as a reference
+04-27 19:08:18 replicate_layout.replicatelayout 193:getting project hierarchy from schematics
+04-27 19:08:18 replicate_layout.replicatelayout 195:Project hierarchy looks like:
+{'5CC75215': ['Motortreiber14', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC65644': ['Motortreiber7', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB48D70': ['Motortreiber4', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7522D': ['Motortreiber12', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFB649': ['Motortreiber2', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7521D': ['Motortreiber15', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655DA': ['Motortreiber9', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC4B548': ['Motortreiber11', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAF974C': ['Stromversorgung', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Stromversorgung.sch'], '5CC65665': ['Motortreiber6', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB4900E': ['Motortreiber5', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBEA5F1': ['Motortreiber1', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB22923': ['Controller', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Controller.sch'], '5CC655CA': ['Motortreiber10', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655E2': ['Motortreiber8', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC75225': ['Motortreiber13', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBF1A9C': ['Motortreiber0', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFBDFD': ['Motortreiber3', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch']}
+04-27 19:08:18 replicate_layout.replicatelayout 203:getting a list of all footprints on board
+04-27 19:08:19 replicate_layout.action_replicate_layout 176:Pivot footprint is u'J1801'
+Located on:['Motortreiber8']
+With filenames:[u'Motortreiber.sch']
+With sheet_id:['Motortreiber8']
+04-27 19:08:19 replicate_layout.action_replicate_layout 180:Corresponding footprints are 
+[(u'J2501', ['Motortreiber15']), (u'J2401', ['Motortreiber14']), (u'J2301', ['Motortreiber13']), (u'J2201', ['Motortreiber12']), (u'J2101', ['Motortreiber11']), (u'J2001', ['Motortreiber10']), (u'J1801', ['Motortreiber8']), (u'J1701', ['Motortreiber7']), (u'J1601', ['Motortreiber6']), (u'J1501', ['Motortreiber5']), (u'J1401', ['Motortreiber4']), (u'J1301', ['Motortreiber3']), (u'J1201', ['Motortreiber2']), (u'J1101', ['Motortreiber1']), (u'J1001', ['Motortreiber0']), (u'J1901', ['Motortreiber9'])]
+04-27 19:08:19 replicate_layout.action_replicate_layout 192:Showing dialog
+04-27 19:08:19 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:08:19 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:08:19 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:08:19 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:08:19 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:08:19 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:08:19 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:08:29 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:08:29 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:08:29 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:08:29 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:08:29 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:08:29 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:08:29 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:08:29 replicate_layout.action_replicate_layout 220:Replicating layout
+04-27 19:08:29 replicate_layout.replicatelayout 989:Starting replication of sheets: [['Motortreiber0']]
+on level: ['Motortreiber8']
+with tracks=True, zone=True, text=True, containing=False, remov=False
+04-27 19:08:29 replicate_layout.replicatelayout 526:Getting the list of pivot footprints
+04-27 19:08:29 replicate_layout.replicatelayout 529:Getting the list of all the remaining footprints
+04-27 19:08:29 replicate_layout.replicatelayout 532:Getting nets local to pivot footprints
+04-27 19:08:30 replicate_layout.replicatelayout 535:Getting pivot bounding box
+04-27 19:08:30 replicate_layout.replicatelayout 538:Getting pivot tracks
+04-27 19:08:32 replicate_layout.replicatelayout 541:Getting pivot zones
+04-27 19:08:32 replicate_layout.replicatelayout 544:Getting pivot text items
+04-27 19:08:32 replicate_layout.replicatelayout 547:Getting pivot text items
+04-27 19:08:32 replicate_layout.replicatelayout 551:Replicating footprints
+04-27 19:08:32 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber0']
+04-27 19:08:32 replicate_layout.replicatelayout 657:Replicating tracks
+04-27 19:08:32 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber0']
+04-27 19:08:32 replicate_layout.replicatelayout 755:Replicating zones
+04-27 19:08:32 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber0']
+04-27 19:08:33 replicate_layout.replicatelayout 855:Replicating text
+04-27 19:08:33 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber0']
+04-27 19:08:33 replicate_layout.replicatelayout 876:Replicating drawings
+04-27 19:08:33 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber0']
+04-27 19:08:33 replicate_layout.action_replicate_layout 230:Replication complete
+04-27 19:08:55 replicate_layout.action_replicate_layout 121:Replicate layout plugin version: 13 started
+04-27 19:08:55 replicate_layout.action_replicate_layout 152:Preparing replicator with J1801 as a reference
+04-27 19:08:55 replicate_layout.replicatelayout 193:getting project hierarchy from schematics
+04-27 19:08:55 replicate_layout.replicatelayout 195:Project hierarchy looks like:
+{'5CC75215': ['Motortreiber14', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC65644': ['Motortreiber7', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB48D70': ['Motortreiber4', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7522D': ['Motortreiber12', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFB649': ['Motortreiber2', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC7521D': ['Motortreiber15', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655DA': ['Motortreiber9', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC4B548': ['Motortreiber11', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAF974C': ['Stromversorgung', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Stromversorgung.sch'], '5CC65665': ['Motortreiber6', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB4900E': ['Motortreiber5', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBEA5F1': ['Motortreiber1', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CB22923': ['Controller', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Controller.sch'], '5CC655CA': ['Motortreiber10', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC655E2': ['Motortreiber8', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CC75225': ['Motortreiber13', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CBF1A9C': ['Motortreiber0', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch'], '5CAFBDFD': ['Motortreiber3', u'/home/frank/Getraenkeautomat002/Hardware/Motortreiber002/Motortreiber.sch']}
+04-27 19:08:55 replicate_layout.replicatelayout 203:getting a list of all footprints on board
+04-27 19:08:55 replicate_layout.action_replicate_layout 176:Pivot footprint is u'J1801'
+Located on:['Motortreiber8']
+With filenames:[u'Motortreiber.sch']
+With sheet_id:['Motortreiber8']
+04-27 19:08:55 replicate_layout.action_replicate_layout 180:Corresponding footprints are 
+[(u'J2501', ['Motortreiber15']), (u'J2401', ['Motortreiber14']), (u'J2301', ['Motortreiber13']), (u'J2201', ['Motortreiber12']), (u'J2101', ['Motortreiber11']), (u'J2001', ['Motortreiber10']), (u'J1801', ['Motortreiber8']), (u'J1701', ['Motortreiber7']), (u'J1601', ['Motortreiber6']), (u'J1501', ['Motortreiber5']), (u'J1401', ['Motortreiber4']), (u'J1301', ['Motortreiber3']), (u'J1201', ['Motortreiber2']), (u'J1101', ['Motortreiber1']), (u'J1001', ['Motortreiber0']), (u'J1901', ['Motortreiber9'])]
+04-27 19:08:55 replicate_layout.action_replicate_layout 192:Showing dialog
+04-27 19:08:55 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:08:55 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:08:55 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:08:55 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:08:55 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:08:55 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:08:55 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:09:03 replicate_layout.replicatelayout 230:construcing a list of sheets suitable for replication on level:'Motortreiber8', file:u'Motortreiber.sch'
+04-27 19:09:03 replicate_layout.replicatelayout 237:Sheet ids up to the level:['Motortreiber8']
+04-27 19:09:03 replicate_layout.replicatelayout 241:Footprints on the sheets:
+[u'J2501', u'J2401', u'J2301', u'J2201', u'J2101', u'J2001', u'J1801', u'J1701', u'J1601', u'J1501', u'J1401', u'J1301', u'J1201', u'J1101', u'J1001', u'J1901']
+04-27 19:09:03 replicate_layout.replicatelayout 244:Footprints raw sheet ids:
+[u'/5CC7521D/5CA5AEA1', u'/5CC75215/5CA5AEA1', u'/5CC75225/5CA5AEA1', u'/5CC7522D/5CA5AEA1', u'/5CC4B548/5CA5AEA1', u'/5CC655CA/5CA5AEA1', u'/5CC655E2/5CA5AEA1', u'/5CC65644/5CA5AEA1', u'/5CC65665/5CA5AEA1', u'/5CB4900E/5CA5AEA1', u'/5CB48D70/5CA5AEA1', u'/5CAFBDFD/5CA5AEA1', u'/5CAFB649/5CA5AEA1', u'/5CBEA5F1/5CA5AEA1', u'/5CBF1A9C/5CA5AEA1', u'/5CC655DA/5CA5AEA1']
+04-27 19:09:03 replicate_layout.replicatelayout 260:All sheets to replicate:
+[['Motortreiber15'], ['Motortreiber14'], ['Motortreiber13'], ['Motortreiber12'], ['Motortreiber11'], ['Motortreiber10'], ['Motortreiber8'], ['Motortreiber7'], ['Motortreiber6'], ['Motortreiber5'], ['Motortreiber4'], ['Motortreiber3'], ['Motortreiber2'], ['Motortreiber1'], ['Motortreiber0'], ['Motortreiber9']]
+04-27 19:09:03 replicate_layout.replicatelayout 265:All sheets to replicate sorted:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber8'], ['Motortreiber9']]
+04-27 19:09:03 replicate_layout.replicatelayout 271:All sheets to replicate sorted and without pivot_sheet:
+[['Motortreiber0'], ['Motortreiber1'], ['Motortreiber10'], ['Motortreiber11'], ['Motortreiber12'], ['Motortreiber13'], ['Motortreiber14'], ['Motortreiber15'], ['Motortreiber2'], ['Motortreiber3'], ['Motortreiber4'], ['Motortreiber5'], ['Motortreiber6'], ['Motortreiber7'], ['Motortreiber9']]
+04-27 19:09:03 replicate_layout.action_replicate_layout 220:Replicating layout
+04-27 19:09:03 replicate_layout.replicatelayout 989:Starting replication of sheets: [['Motortreiber7']]
+on level: ['Motortreiber8']
+with tracks=True, zone=True, text=True, containing=False, remov=False
+04-27 19:09:03 replicate_layout.replicatelayout 526:Getting the list of pivot footprints
+04-27 19:09:03 replicate_layout.replicatelayout 529:Getting the list of all the remaining footprints
+04-27 19:09:03 replicate_layout.replicatelayout 532:Getting nets local to pivot footprints
+04-27 19:09:04 replicate_layout.replicatelayout 535:Getting pivot bounding box
+04-27 19:09:04 replicate_layout.replicatelayout 538:Getting pivot tracks
+04-27 19:09:06 replicate_layout.replicatelayout 541:Getting pivot zones
+04-27 19:09:06 replicate_layout.replicatelayout 544:Getting pivot text items
+04-27 19:09:06 replicate_layout.replicatelayout 547:Getting pivot text items
+04-27 19:09:06 replicate_layout.replicatelayout 551:Replicating footprints
+04-27 19:09:06 replicate_layout.replicatelayout 553:Replicating footprints on sheet ['Motortreiber7']
+04-27 19:09:06 replicate_layout.replicatelayout 657:Replicating tracks
+04-27 19:09:06 replicate_layout.replicatelayout 659:Replicating tracks on sheet ['Motortreiber7']
+04-27 19:09:07 replicate_layout.replicatelayout 755:Replicating zones
+04-27 19:09:07 replicate_layout.replicatelayout 758:Replicating zones on sheet ['Motortreiber7']
+04-27 19:09:07 replicate_layout.replicatelayout 855:Replicating text
+04-27 19:09:07 replicate_layout.replicatelayout 858:Replicating text on sheet ['Motortreiber7']
+04-27 19:09:07 replicate_layout.replicatelayout 876:Replicating drawings
+04-27 19:09:07 replicate_layout.replicatelayout 878:Replicating drawings on sheet ['Motortreiber7']
+04-27 19:09:07 replicate_layout.action_replicate_layout 230:Replication complete
