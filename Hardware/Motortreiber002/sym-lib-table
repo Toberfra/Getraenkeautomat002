@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Eigene)(type Legacy)(uri ${KIPRJMOD}/Eigene.lib)(options "")(descr ""))
+  (lib (name Motorteiber002-rescue)(type Legacy)(uri ${KIPRJMOD}/Motorteiber002-rescue.lib)(options "")(descr ""))
 )
