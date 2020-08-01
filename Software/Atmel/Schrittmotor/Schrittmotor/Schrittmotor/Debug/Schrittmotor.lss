@@ -1,0 +1,217 @@
+
+Schrittmotor.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000008  00800100  0000011e  00000192  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000011e  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000019a  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  000001cc  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000098  00000000  00000000  0000020c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000d90  00000000  00000000  000002a4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000087b  00000000  00000000  00001034  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000337  00000000  00000000  000018af  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000108  00000000  00000000  00001be8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000078c  00000000  00000000  00001cf0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000001a4  00000000  00000000  0000247c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000078  00000000  00000000  00002620  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   8:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  10:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  14:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  18:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  1c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  20:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  24:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  28:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  2c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  30:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  34:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  38:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  3c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  40:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  44:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  48:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  4c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  50:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  54:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  58:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  5c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  60:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  64:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	11 e0       	ldi	r17, 0x01	; 1
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	ee e1       	ldi	r30, 0x1E	; 30
+  7c:	f1 e0       	ldi	r31, 0x01	; 1
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+  84:	a8 30       	cpi	r26, 0x08	; 8
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+  8a:	0e 94 4b 00 	call	0x96	; 0x96 <main>
+  8e:	0c 94 8d 00 	jmp	0x11a	; 0x11a <_exit>
+
+00000092 <__bad_interrupt>:
+  92:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000096 <main>:
+
+#include <avr/io.h>
+#include "Schrittmotor.h"
+
+int main(void)
+{
+  96:	cf 93       	push	r28
+  98:	df 93       	push	r29
+  9a:	cd b7       	in	r28, 0x3d	; 61
+  9c:	de b7       	in	r29, 0x3e	; 62
+  9e:	27 97       	sbiw	r28, 0x07	; 7
+  a0:	0f b6       	in	r0, 0x3f	; 63
+  a2:	f8 94       	cli
+  a4:	de bf       	out	0x3e, r29	; 62
+  a6:	0f be       	out	0x3f, r0	; 63
+  a8:	cd bf       	out	0x3d, r28	; 61
+	Schrittmotor schrittmotor;
+  aa:	ce 01       	movw	r24, r28
+  ac:	01 96       	adiw	r24, 0x01	; 1
+  ae:	0e 94 7e 00 	call	0xfc	; 0xfc <_ZN12SchrittmotorC1Ev>
+	schrittmotor.Power(true);
+  b2:	61 e0       	ldi	r22, 0x01	; 1
+  b4:	ce 01       	movw	r24, r28
+  b6:	01 96       	adiw	r24, 0x01	; 1
+  b8:	0e 94 67 00 	call	0xce	; 0xce <_ZN12Schrittmotor5PowerEb>
+	schrittmotor.Speed(1.0);
+  bc:	40 e0       	ldi	r20, 0x00	; 0
+  be:	50 e0       	ldi	r21, 0x00	; 0
+  c0:	60 e8       	ldi	r22, 0x80	; 128
+  c2:	7f e3       	ldi	r23, 0x3F	; 63
+  c4:	ce 01       	movw	r24, r28
+  c6:	01 96       	adiw	r24, 0x01	; 1
+  c8:	0e 94 7c 00 	call	0xf8	; 0xf8 <_ZN12Schrittmotor5SpeedEf>
+  cc:	ff cf       	rjmp	.-2      	; 0xcc <main+0x36>
+
+000000ce <_ZN12Schrittmotor5PowerEb>:
+ * \return true wenn der Befehl ausgefuehrt werden konnte.
+************************************************************************/
+
+bool Schrittmotor::Power(bool on){
+	bool ok = false;
+	if(on){
+  ce:	66 23       	and	r22, r22
+  d0:	41 f0       	breq	.+16     	; 0xe2 <_ZN12Schrittmotor5PowerEb+0x14>
+		if(modus == aus)
+  d2:	fc 01       	movw	r30, r24
+  d4:	26 81       	ldd	r18, Z+6	; 0x06
+  d6:	21 11       	cpse	r18, r1
+  d8:	0b c0       	rjmp	.+22     	; 0xf0 <_ZN12Schrittmotor5PowerEb+0x22>
+			modus = powerOn;
+  da:	21 e0       	ldi	r18, 0x01	; 1
+  dc:	26 83       	std	Z+6, r18	; 0x06
+		ok = true;	
+  de:	81 e0       	ldi	r24, 0x01	; 1
+  e0:	08 95       	ret
+	}else{
+		if(modus == powerOn){
+  e2:	fc 01       	movw	r30, r24
+  e4:	26 81       	ldd	r18, Z+6	; 0x06
+  e6:	21 30       	cpi	r18, 0x01	; 1
+  e8:	29 f4       	brne	.+10     	; 0xf4 <_ZN12Schrittmotor5PowerEb+0x26>
+			modus = aus;
+  ea:	16 82       	std	Z+6, r1	; 0x06
+			ok = true;
+  ec:	81 e0       	ldi	r24, 0x01	; 1
+  ee:	08 95       	ret
+bool Schrittmotor::Power(bool on){
+	bool ok = false;
+	if(on){
+		if(modus == aus)
+			modus = powerOn;
+		ok = true;	
+  f0:	81 e0       	ldi	r24, 0x01	; 1
+  f2:	08 95       	ret
+ * \param on true es fliesst Strom durch den Motor
+ * \return true wenn der Befehl ausgefuehrt werden konnte.
+************************************************************************/
+
+bool Schrittmotor::Power(bool on){
+	bool ok = false;
+  f4:	80 e0       	ldi	r24, 0x00	; 0
+			ok = true;
+		}
+	}
+	
+	return ok;
+}
+  f6:	08 95       	ret
+
+000000f8 <_ZN12Schrittmotor5SpeedEf>:
+ * \return true wenn der Befehl ausgefuehrt werden konnte.
+************************************************************************/
+	
+bool Schrittmotor::Speed(float ups){
+	return true;
+}
+  f8:	81 e0       	ldi	r24, 0x01	; 1
+  fa:	08 95       	ret
+
+000000fc <_ZN12SchrittmotorC1Ev>:
+ * \brief Schrittmotor Ansteuerung
+************************************************************************/
+
+#include"Schrittmotor.h"
+
+Schrittmotor::Schrittmotor(){
+  fc:	fc 01       	movw	r30, r24
+  fe:	84 e0       	ldi	r24, 0x04	; 4
+ 100:	91 e0       	ldi	r25, 0x01	; 1
+ 102:	91 83       	std	Z+1, r25	; 0x01
+ 104:	80 83       	st	Z, r24
+	motorPulseProUmdrehung = 200;
+ 106:	88 ec       	ldi	r24, 0xC8	; 200
+ 108:	90 e0       	ldi	r25, 0x00	; 0
+ 10a:	93 83       	std	Z+3, r25	; 0x03
+ 10c:	82 83       	std	Z+2, r24	; 0x02
+	microstepPulse = 32;
+ 10e:	80 e2       	ldi	r24, 0x20	; 32
+ 110:	90 e0       	ldi	r25, 0x00	; 0
+ 112:	95 83       	std	Z+5, r25	; 0x05
+ 114:	84 83       	std	Z+4, r24	; 0x04
+	modus = aus;	
+ 116:	16 82       	std	Z+6, r1	; 0x06
+ 118:	08 95       	ret
+
+0000011a <_exit>:
+ 11a:	f8 94       	cli
+
+0000011c <__stop_program>:
+ 11c:	ff cf       	rjmp	.-2      	; 0x11c <__stop_program>
