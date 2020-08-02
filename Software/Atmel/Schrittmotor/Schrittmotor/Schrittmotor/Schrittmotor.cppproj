@@ -182,6 +182,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="inout.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="inout.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="main.cpp">
       <SubType>compile</SubType>
     </Compile>

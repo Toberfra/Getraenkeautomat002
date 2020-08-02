@@ -1,3 +1,11 @@
+/************************************************************************
+ * \file
+ * \brief Vorgaben zur Schrittmotor Ansteuerung
+ *
+ *
+ *
+ ************************************************************************/
+
 /*! \class SchrittmotorInterface
  * Ansprechen des Schrittmotors als Vorgaben
  *

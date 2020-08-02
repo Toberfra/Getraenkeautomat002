@@ -1,21 +1,31 @@
-/*
- * Schrittmotor.cpp
+/************************************************************************
+ * \file
+ * \brief Programmstart
  *
- * Created: 30.07.2020 20:18:23
- * Author : User
- */ 
-
-#include <avr/io.h>
+ *
+ *
+ ************************************************************************/
 #include "Schrittmotor.h"
+#include "inout.h"
 
+/************************************************************************
+ * Programmstart   
+ *
+ * \return errorcode
+ *
+ ************************************************************************/
 int main(void)
 {
+	InOut::Init();
 	Schrittmotor schrittmotor;
 	schrittmotor.Power(true);
-	schrittmotor.Speed(1.0);
+	schrittmotor.Speed(5.0);
     /* Replace with your application code */
+	sei();
     while (1) 
     {
     }
 }
+
+
 
