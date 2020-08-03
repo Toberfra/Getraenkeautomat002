@@ -35,4 +35,9 @@
 *.exe
 *.out
 *.app
+*.lss
+*.map
+*.elf
+*.hex
+*.srec
 

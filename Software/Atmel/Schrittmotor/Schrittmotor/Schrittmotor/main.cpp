@@ -18,7 +18,7 @@ int main(void)
 {
 	InOut::Init();
 	Schrittmotor schrittmotor;
-	schrittmotor.Power(true);
+	//schrittmotor.Power(true);
 	schrittmotor.Speed(5.0);
     /* Replace with your application code */
 	sei();

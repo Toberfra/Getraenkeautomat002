@@ -4,6 +4,32 @@
 ************************************************************************/ 
 #include "Schrittmotor_Interface.h"
 
+/************************************************************************
+ * \page SchrittmotorModi Schrittmotor Modi
+ * \date 03.08.2020   
+ * \author Frank Tobergte
+ * \see Schrittmotor::modus_enum
+ * \brief 
+ *  \dot
+ *  digraph example {
+ *      node [shape=record, fontname=Helvetica, fontsize=10];
+ *      edge [fontname=Helvetica, fontsize=10];
+ *		aus[style=filled, fillcolor=red, fontcolor=yellow]; 
+ *		powerOn[style=filled, fillcolor=yellow];
+ *		dauerhaftAn[style=filled, fillcolor=green];
+ *		
+ *		aus -> powerOn[label="InOut::Power(true)", URL="\ref InOut::Power"];
+ *		powerOn -> aus[label="InOut::Power(false)", URL="\ref InOut::Power"];
+ *		
+ *		powerOn -> dauerhaftAn[label="InOut::Speed(!=0)", URL="\ref InOut::Speed"];
+ *		dauerhaftAn -> powerOn[label="InOut::Speed(0)", URL="\ref InOut::Speed"];
+ *		
+ *  }
+ *  \enddot
+ ************************************************************************/
+
+
+
 
 /************************************************************************
  * \class Schrittmotor

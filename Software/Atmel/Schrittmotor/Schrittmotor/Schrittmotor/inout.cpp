@@ -28,6 +28,7 @@ void InOut::Init(){
 	DDRD |= (1 << 2) |(1 << DDD6);
 	PORTB |= 1<<PORTB5;
 	PORTD &= ~ (1 << PORTD6);
+	PORTD |= (1<<2);
 	initTimer2();
 }
 	
