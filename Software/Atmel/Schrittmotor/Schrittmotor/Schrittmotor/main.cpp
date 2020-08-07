@@ -7,6 +7,7 @@
  ************************************************************************/
 #include "Schrittmotor.h"
 #include "inout.h"
+#include "Befehle.h"
 
 /************************************************************************
  * Programmstart   
@@ -17,13 +18,18 @@
 int main(void)
 {
 	InOut::Init();
+	Usart0 tty(115000L);
 	Schrittmotor schrittmotor;
+
+	Befehle befehle((SchrittmotorInterface*)&schrittmotor);
 	//schrittmotor.Power(true);
-	schrittmotor.Speed(5.0);
+	//schrittmotor.Speed(1.0 / 60.0);
     /* Replace with your application code */
 	sei();
+	tty.sende("Pumpe1:\r\n");
     while (1) 
     {
+		befehle.step();
     }
 }
 

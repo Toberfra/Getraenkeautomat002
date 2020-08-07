@@ -182,6 +182,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Befehle.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Befehle.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="inout.cpp">
       <SubType>compile</SubType>
     </Compile>
@@ -191,15 +197,26 @@
     <Compile Include="main.cpp">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="Ringbuffer.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Ringbuffer.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="Schrittmotor.cpp">
       <SubType>compile</SubType>
-      <Link>Schrittmotor.cpp</Link>
     </Compile>
     <Compile Include="Schrittmotor.h">
       <SubType>compile</SubType>
       <Link>Schrittmotor.h</Link>
     </Compile>
     <Compile Include="Schrittmotor_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Usart0.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Usart0.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

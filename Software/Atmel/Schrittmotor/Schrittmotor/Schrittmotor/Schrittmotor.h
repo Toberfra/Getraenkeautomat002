@@ -1,3 +1,5 @@
+#pragma once
+
 /************************************************************************
  * \file
  * \brief Schrittmotor Ansteuerung
@@ -23,6 +25,7 @@
  *		
  *		powerOn -> dauerhaftAn[label="InOut::Speed(!=0)", URL="\ref InOut::Speed"];
  *		dauerhaftAn -> powerOn[label="InOut::Speed(0)", URL="\ref InOut::Speed"];
+ *		
  *		
  *  }
  *  \enddot

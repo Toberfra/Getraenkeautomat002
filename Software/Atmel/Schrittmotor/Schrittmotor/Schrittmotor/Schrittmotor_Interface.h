@@ -1,3 +1,4 @@
+#pragma once
 /************************************************************************
  * \file
  * \brief Vorgaben zur Schrittmotor Ansteuerung
