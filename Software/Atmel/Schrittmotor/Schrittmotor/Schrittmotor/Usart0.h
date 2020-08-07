@@ -3,7 +3,7 @@
  * \date 05.08.2020   
  * \author Frank Tobergte
  *
- * \brief Serielle Komonlkation
+ * \brief Serielle Komonikation
  * 
  ************************************************************************/
 #pragma once
@@ -14,6 +14,14 @@
 #include "Ringbuffer.h"
 
 
+/************************************************************************
+ * \var __INTR_ATTRS
+ * \date 01.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief __INTR_ATTRS 
+ * 
+ ************************************************************************/
 extern "C" void USART_RX_vect(void) __attribute__ ((signal, __INTR_ATTRS));
 extern "C" void USART_TX_vect(void) __attribute__ ((signal, __INTR_ATTRS));
 extern "C" void USART_UDRE_vect(void) __attribute__ ((signal, __INTR_ATTRS));
@@ -70,12 +78,4 @@ private:
 
 };
 
-/************************************************************************
- * \var __INTR_ATTRS
- * \date 01.08.2020   
- * \author Frank Tobergte
- *
- * \brief __INTR_ATTRS 
- * 
- ************************************************************************/
 

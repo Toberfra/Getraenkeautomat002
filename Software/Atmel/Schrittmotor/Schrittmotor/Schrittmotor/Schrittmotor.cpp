@@ -13,8 +13,8 @@ Schrittmotor::Schrittmotor(){
 	motorPulseProUmdrehung = 200;
 	microstepPulse = 32;
 	modus = aus;
-	maxBeschleunigung = 5.0f;
-	maxBremsen = 5.0f;
+	maxBeschleunigung = 15.0f;
+	maxBremsen = 30.0f;
 	istUps = 0.0f;
 	sollUps = 0.0f;
 	
@@ -100,7 +100,7 @@ void Schrittmotor::SetSpeedUL(unsigned long pps){
  *	\param umkr true = Umgekehrte Drehrichtung
 ************************************************************************/
 void Schrittmotor::SetRichtung(bool umkr){
-	
+	InOut::Richtung(umkr);	
 }
 
 /************************************************************************
@@ -163,18 +163,41 @@ void Schrittmotor::Tick(float sekunden){
 	float maxBremsenLocal;
 	float delta;
 	float neuUps;
+	float sollUps;
+	float istUps;
+	bool umkr;
+	
+	istUps = ich->istUps;
+	sollUps = ich->sollUps;
 	
 	maxBeschleunigungLocal = ich->maxBeschleunigung * sekunden;
 	maxBremsenLocal = ich->maxBremsen * sekunden;
 	
-	neuUps = ich->sollUps;
-	delta = neuUps - ich->istUps;	
-	
-	if(delta > maxBeschleunigungLocal)
-		neuUps = ich->istUps + maxBeschleunigungLocal;
-	if(delta < maxBremsenLocal)
-		neuUps = ich->istUps - maxBremsenLocal;
+	if(istUps < 0)
+		umkr = true;
+	else
+		umkr = false;
 		
+	neuUps = sollUps;
+	delta = neuUps - istUps;	
+	if(umkr){
+		if(delta <- maxBeschleunigungLocal)
+		neuUps = istUps - maxBeschleunigungLocal;
+		if(delta > maxBremsenLocal)
+		neuUps = istUps + maxBremsenLocal;
+		
+	}else{
+		if(delta > maxBeschleunigungLocal)
+			neuUps = ich->istUps + maxBeschleunigungLocal;
+		if(delta < -maxBremsenLocal)
+			neuUps = ich->istUps - maxBremsenLocal;
+	}
 	ich->istUps = neuUps;
-	ich->SetSpeedFloat(ich->istUps);	
+	ich->SetRichtung(umkr);
+	if(umkr)
+		ich->SetSpeedFloat(-ich->istUps);	
+	else
+		ich->SetSpeedFloat(ich->istUps);
+
 }
+

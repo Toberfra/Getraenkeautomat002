@@ -23,7 +23,7 @@ int main(void)
 
 	Befehle befehle((SchrittmotorInterface*)&schrittmotor);
 	//schrittmotor.Power(true);
-	//schrittmotor.Speed(1.0 / 60.0);
+	//schrittmotor.Speed(-4.0);
     /* Replace with your application code */
 	sei();
 	tty.sende("Pumpe1:\r\n");

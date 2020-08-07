@@ -39,7 +39,7 @@ private:
 	static void timer0Off(void);
 	static void timer0On(void);
 	static void timer0Prescaler(unsigned char prescaler);
-	};
+};
 
 /************************************************************************
  * \var __INTR_ATTRS

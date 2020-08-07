@@ -25,7 +25,7 @@ void TIMER2_COMPA_vect(void){
   ************************************************************************/
 void InOut::Init(){
 	DDRB |= (1<<DDB5) | (1<<DDB1);
-	DDRD |= (1 << 2) |(1 << DDD6);
+	DDRD |= (1 << 2) | (1 << 3) |(1 << DDD6);
 	PORTB |= 1<<PORTB5;
 	PORTD &= ~ (1 << PORTD6);
 	PORTD |= (1<<2);
@@ -72,7 +72,10 @@ void InOut::Power(bool on){
  * \param umkr true = andere Drehrichtung
  ************************************************************************/
 void InOut::Richtung(bool umkr){
-	
+	if(!umkr)
+		PORTD &=~ (1<<3);
+	else
+		PORTD |= (1<<3);	
 }
 
 /************************************************************************
@@ -86,7 +89,7 @@ void InOut::Richtung(bool umkr){
 void InOut::Speed(unsigned long pps){
 	if(pps){
 		unsigned int grob = 1;
-		float takte = round(12e6 / 2 / pps);
+		float takte = round(16e6 / 2 / pps);
 		if(takte > 0xffff)
 		takte = 0xffff;
 		unsigned int fein = takte;
@@ -95,16 +98,19 @@ void InOut::Speed(unsigned long pps){
 			grob++;
 			fein >>= 3;
 		}
+		
 		if (fein > 255)
 		{
 			grob++;
 			fein >>= 3;
 		}
+		
 		if (fein > 255)
 		{
 			grob++;
 			fein >>= 2;
 		}
+		
 		if (fein > 255)
 		{
 			grob++;
@@ -115,18 +121,18 @@ void InOut::Speed(unsigned long pps){
 		if(fein <= 255){
 			OCR0A = fein;
 			timer0Prescaler(grob);
-		}
-		else{
+		}else{
 			OCR0A = 255;
 			timer0Prescaler(5);
 		}
 
 			
-		}else{
+	}else{
 		timer0Off();
 	}
 	
-}/************************************************************************
+}
+/************************************************************************
  * \date 01.08.2020   
  * \author Frank Tobergte
  *
