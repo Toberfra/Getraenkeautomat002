@@ -228,8 +228,7 @@ bool Befehle::befehlUps(){
 	bool ok = false;
 	if( anfaengeZaehler == 2){
 		ups = atof(anfaenge[1]);
-		motor->Speed(ups);
-		ok = true;
+		ok = motor->Speed(ups);
 	}
 
 	return ok;

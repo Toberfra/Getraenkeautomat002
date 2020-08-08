@@ -5,6 +5,7 @@
 
 #include"Schrittmotor.h"
 #include "inout.h"
+#include "Usart0.h"
 
 Schrittmotor *Schrittmotor::ich = 0;
 
@@ -41,18 +42,27 @@ Schrittmotor::~Schrittmotor(){
 
 bool Schrittmotor::Power(bool on){
 	bool ok = false;
-	if(on){
-		if(modus == aus){
-			modus = powerOn;
-			InOut::Power(true);
-		}
-		ok = true;	
-	}else{
-		if(modus == powerOn){
-			modus = aus;
-			InOut::Power(false);
+	
+	switch(modus){
+		case aus:
+			if(on){
+				modus = powerOn;
+				InOut::Power(true);
+			}
 			ok = true;
-		}
+			break;
+			
+		case powerOn:
+			if(!on){
+				modus = aus;
+				InOut::Power(false);
+			}				
+			ok = true;
+			break;
+
+		default:
+			ok = false;
+			break;
 	}
 	
 	return ok;
@@ -67,8 +77,18 @@ bool Schrittmotor::Power(bool on){
 ************************************************************************/
 	
 bool Schrittmotor::Speed(float ups){
-	sollUps = ups;
-	return true;
+	bool ok = false;
+	switch(modus){
+		case powerOn:
+		case dauerhaftAn:
+			sollUps = ups;
+			ok = true;
+			modus = dauerhaftAn;
+			break;
+		default:
+			break;
+	}
+	return ok;
 }
 
 
@@ -82,7 +102,13 @@ bool Schrittmotor::Speed(float ups){
 ************************************************************************/
 
 void Schrittmotor::SetSpeedFloat(float ups){
-	SetSpeedUL((unsigned long)(ups * (float)GetPulseProUmdrehung()));
+	if(ups >= 0){
+		SetRichtung(false);
+		SetSpeedUL((unsigned long)(ups * (float)GetPulseProUmdrehung()));
+	}else{
+		SetRichtung(true);
+		SetSpeedUL((unsigned long)(-ups * (float)GetPulseProUmdrehung()));
+	}
 	
 }
 
@@ -188,16 +214,22 @@ void Schrittmotor::Tick(float sekunden){
 		
 	}else{
 		if(delta > maxBeschleunigungLocal)
-			neuUps = ich->istUps + maxBeschleunigungLocal;
+			neuUps = istUps + maxBeschleunigungLocal;
 		if(delta < -maxBremsenLocal)
-			neuUps = ich->istUps - maxBremsenLocal;
+			neuUps = istUps - maxBremsenLocal;
 	}
-	ich->istUps = neuUps;
-	ich->SetRichtung(umkr);
-	if(umkr)
-		ich->SetSpeedFloat(-ich->istUps);	
-	else
-		ich->SetSpeedFloat(ich->istUps);
-
+	istUps = neuUps;
+	ich->SetSpeedFloat(istUps);
+	ich->istUps = istUps;
+	switch(ich->modus){
+		case dauerhaftAn:
+			if((istUps == 0) && (sollUps == 0)){
+				ich->modus = powerOn;
+				Usart0::sende(" --> Steht\r\n>: ");
+			}
+			break;
+		default:
+			break;
+	}
 }
 
