@@ -122,9 +122,7 @@ void Befehle::lesen(void){
  * \return true = Befehl konnte verarbeitet werden
  ************************************************************************/
 bool Befehle::auswerten(char* text){
-	/*if(gleicherAnfang("test " , text)){
-		uart.sende("gefunden!\r\n");
-	}*/
+
 	bool ok = false;
 	anfaengeFinden();
 	
@@ -133,10 +131,10 @@ bool Befehle::auswerten(char* text){
 /*
 	else if(strcmp(anfaenge[0],"pps") == 0)
 		ok = befehlPps();
-		
+*/		
 	else if(strcmp(anfaenge[0],"umdr") == 0)
 	ok = befehlUmdr();
-	
+/*	
 	else if(strcmp(anfaenge[0],"stopp") == 0)
 	ok = befehlStopp();
 
@@ -149,20 +147,6 @@ bool Befehle::auswerten(char* text){
 
 	schreibePrompt(ok);
 	
-	/*{
-		int i;
-		for (i = 0 ; i < anfaengeAnzahl ; i++)
-		{
-			if(anfaenge[i]){
-				uart.sende("\r\n");
-				uart.sende(anfaenge[i]);
-			}
-				
-		}
-		uart.sende("\r\n");
-
-	}*/
-
 	return true;	
 }
 
@@ -244,7 +228,14 @@ bool Befehle::befehlPps(){
 	}
 	return ok;
 };
-
+*/
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Wertet den Befehl "umdr" aus
+ * \return true = Befehl konnte verarbeitet werden.
+ ************************************************************************/
 bool Befehle::befehlUmdr(){
 	bool ok = false;
 	float n;
@@ -252,11 +243,11 @@ bool Befehle::befehlUmdr(){
 	if( anfaengeZaehler == 3){
 		n = atof(anfaenge[1]);
 		t = atof(anfaenge[2]);
-		ok = motor->umdrehungen(n,t);
+		ok = motor->Umdrehungen(n,t);
 	}
 	return ok;
 };
-
+/*
 bool Befehle::befehlStopp(){
 	bool ok = true;
 	

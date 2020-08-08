@@ -31,9 +31,28 @@ public:
  * \param ups Umdrehungen pro Sekunde
  * \return true wenn der Befehl ausgefuehrt werden konnte.
  */	
+
 	virtual bool Speed(float ups) = 0;
-	
-	
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Schaltet den Motor fuer eine angegeben Anzahl an Umdrehungen ein
+ * \param umdr Anzahl der Umdrehungen
+ * \return = true wenn der Befehl ausgefuehr wurde
+ ************************************************************************/	
+	virtual bool Umdrehungen(float umdr) = 0;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Schaltet den Motor fuer eine angegeben Anzahl an Umdrehungen 
+ * in einer angegebenen Zeit ein.
+ * \param umdr Anzahl der Umdrehungen
+ * \param zeit die fuer die Umdrehungen vorgesehen ist
+ * \return = true wenn der Befehl ausgefuehr wurde
+ ************************************************************************/	
+virtual bool Umdrehungen(float umdr, float zeit) = 0;
 };
 	
 	

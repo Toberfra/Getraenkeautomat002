@@ -16,9 +16,22 @@
  *  digraph example {
  *      node [shape=record, fontname=Helvetica, fontsize=10];
  *      edge [fontname=Helvetica, fontsize=10];
+ *      
+ *      subgraph clusterAus{
  *		aus[style=filled, fillcolor=red, fontcolor=yellow]; 
  *		powerOn[style=filled, fillcolor=yellow];
+ *		}
+ *		
+ *		subgraph clusterDrehzahl{
  *		dauerhaftAn[style=filled, fillcolor=green];
+ *		}
+ *
+ *		subgraph clusterUmdrehungen{
+ *		rampeHoch;
+ *		oben;
+ *		rampeRunter;
+ *		nachlauf;
+ *		}
  *		
  *		aus -> powerOn[label="InOut::Power(true)", URL="\ref InOut::Power"];
  *		powerOn -> aus[label="InOut::Power(false)", URL="\ref InOut::Power"];
@@ -26,7 +39,11 @@
  *		powerOn -> dauerhaftAn[label="InOut::Speed(!=0)", URL="\ref InOut::Speed"];
  *		dauerhaftAn -> powerOn[label="InOut::Speed(0)", URL="\ref InOut::Speed"];
  *		
- *		
+ *		powerOn -> rampeHoch;
+ *		rampeHoch -> oben;
+ *		oben -> rampeRunter;
+ *		rampeRunter -> nachlauf;
+ *		nachlauf -> powerOn;
  *  }
  *  \enddot
  ************************************************************************/
@@ -47,6 +64,8 @@ public:
 	~Schrittmotor();
 	bool Power(bool on);
 	bool Speed(float ups);
+	bool Umdrehungen(float umdr);
+	bool Umdrehungen(float umdr, float zeit);
 	static void Tick(float sekunden);
 	
 /************************************************************************
@@ -56,9 +75,13 @@ public:
  *
  ************************************************************************/
 	enum modus_enum{
-		aus,		///< Strom durch den Motor Abgeschaltet
-		powerOn,	///< Strom durch den Motor Eingeschaltet aber keine Drehung
-		dauerhaftAn ///< Motor dreht dauerhaft mit der gewaehlten Drehzal
+		aus,			///< Strom durch den Motor Abgeschaltet
+		powerOn,		///< Strom durch den Motor Eingeschaltet aber keine Drehung
+		dauerhaftAn,	///< Motor dreht dauerhaft mit der gewaehlten Drehzal
+		rampeHoch,		///< Motor wird ueber eine Rampe auf Drehzahl gebracht
+		oben,			///< Motor wird mit konstannter Drehzahl betrieben
+		rampeRunter,	///< Motor wird ueber eine Rampe auf nachlauf Drehzahl heruntergefahren
+		nachlauf		///< Motor dreht mit langsammer Drehzahl bis die genaue Anzahl der Pulse erreicht ist.
 		};
 	
 protected:

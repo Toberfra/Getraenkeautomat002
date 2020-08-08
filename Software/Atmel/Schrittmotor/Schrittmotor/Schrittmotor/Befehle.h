@@ -118,7 +118,7 @@ private:
 	
 	bool befehlUps(void);
 	//bool befehlPps(void);
-	//bool befehlUmdr(void);
+	bool befehlUmdr(void);
 	//bool befehlStopp(void);
 	bool befehlPower(void);
 
