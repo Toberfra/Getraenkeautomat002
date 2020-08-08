@@ -8,7 +8,7 @@
  ************************************************************************/
 
 #include "Usart0.h"
-#include "Schrittmotor_Interface.h"
+#include "Schrittmotor.h"
 /************************************************************************
  * \class Befehle
  * \date 05.08.2020   
@@ -21,10 +21,10 @@ class Befehle
 {
 public:
 	Befehle();
-	Befehle(SchrittmotorInterface*);
+	Befehle(Schrittmotor*);
 	~Befehle();
 	
-	void init(SchrittmotorInterface*);
+	void init(Schrittmotor*);
 	
 	void step(void);
 	
@@ -129,7 +129,7 @@ private:
  * \brief Zeiger auf die Motor Interface Instanze, in der aber eine eine vererbte Klasse liegt.
  * 
  ************************************************************************/ 
-	SchrittmotorInterface *motor;
+	Schrittmotor *motor;
 	
 	void schreibePrompt(bool);
 };

@@ -6,6 +6,7 @@
 #include"Schrittmotor.h"
 #include "inout.h"
 #include "Usart0.h"
+#include <math.h>
 
 Schrittmotor *Schrittmotor::ich = 0;
 
@@ -18,6 +19,11 @@ Schrittmotor::Schrittmotor(){
 	maxBremsen = 30.0f;
 	istUps = 0.0f;
 	sollUps = 0.0f;
+	beschleunigungsphaseInSekunden = 1.0;
+	abbremsphaseInSekunden = 0.5;
+	
+	minimalSpeed = 0.01;
+	maximalSpeed = 15;
 
 
 
@@ -26,7 +32,7 @@ Schrittmotor::Schrittmotor(){
 
 
 Schrittmotor::~Schrittmotor(){
-	SetSpeedFloat(0UL);
+	SetSpeedFloatAutoRichtung(0UL);
 }
 
 
@@ -85,45 +91,47 @@ bool Schrittmotor::Speed(float ups){
 		ok = true;
 		modus = dauerhaftAn;
 		break;
-		
+
 		default:
 		break;
 	}
 	return ok;
 }
 /************************************************************************
- * \date 08.08.2020   
+ * \date 08.08.2020
  * \author Frank Tobergte
  *
  * \brief Schaltet den Motor fuer eine angegeben Anzahl an Umdrehungen ein
  * \param umdr Anzahl der Umdrehungen
  * \return = true wenn der Befehl ausgefuehrt wurde
  ************************************************************************/
-	bool Schrittmotor::Umdrehungen(float umdr){
-		return Umdrehungen(umdr , 10);
+	bool Schrittmotor::UmdrehungenOhneZeit(float umdr){
+		return UmdrehungenMitZeit(umdr , 10);
 	}
-	
+
 /************************************************************************
- * \date 08.08.2020   
+ * \date 08.08.2020
  * \author Frank Tobergte
  *
- * \brief Schaltet den Motor fuer eine angegeben Anzahl an Umdrehungen 
+ * \brief Schaltet den Motor fuer eine angegeben Anzahl an Umdrehungen
  * in einer angegebenen Zeit ein.
  * \param umdr Anzahl der Umdrehungen
  * \param zeit die fuer die Umdrehungen vorgesehen ist
  * \return = true wenn der Befehl ausgefuehrt wurde
  ************************************************************************/
-	bool Schrittmotor::Umdrehungen(float umdr, float zeit){
+	bool Schrittmotor::UmdrehungenMitZeit(float umdr, float zeit){
 		bool ok = false;
 		switch(modus){
 			case powerOn:
-			//sollUps = ups;
-			ok = true;
-			modus = rampeHoch;
-			break;
-				
+				BerechneRampen(umdr, zeit);
+				zeitSeitAnlauf = 0;
+				rampeSpeedUPS = 0;
+				ok = true;
+				modus = rampeHoch;
+				break;
+
 			default:
-			break;
+				break;
 		}
 		return ok;
 	}
@@ -136,7 +144,7 @@ bool Schrittmotor::Speed(float ups){
 * Bei Negativer ups wird die Drehrichung invertiert
 ************************************************************************/
 
-void Schrittmotor::SetSpeedFloat(float ups){
+void Schrittmotor::SetSpeedFloatAutoRichtung(float ups){
 	if(ups >= 0){
 		SetRichtung(false);
 		SetSpeedUL((unsigned long)(ups * (float)GetPulseProUmdrehung()));
@@ -147,6 +155,21 @@ void Schrittmotor::SetSpeedFloat(float ups){
 
 }
 
+/************************************************************************
+* Angabe der Geschwindigkeit in Umdrehungen pro Sekunde
+*
+* \param ups Umdrehungen pro Sekunde
+*
+************************************************************************/
+
+void Schrittmotor::SetSpeedFloatOhneRichtung(float ups){
+	if(ups >= 0){
+		SetSpeedUL((unsigned long)(ups * (float)GetPulseProUmdrehung()));
+	}else{
+		SetSpeedUL((unsigned long)(-ups * (float)GetPulseProUmdrehung()));
+	}
+
+}
 /************************************************************************
 * Angabe der Geschwindigkeit in Takte pro Sekunde
 *
@@ -220,51 +243,185 @@ unsigned long Schrittmotor::GetPulseProUmdrehung(){
 * \param sekunden Abstand der Aufrufe in sekunden
 ************************************************************************/
 void Schrittmotor::Tick(float sekunden){
+	ich->zeitSeitAnlauf += sekunden;
+	switch(ich->modus){
+		default:
+		case aus:
+			break;
+
+		case dauerhaftAn:
+			ich->TickDauerhaftAn(sekunden);
+			break;
+
+		case rampeHoch:
+			ich->TickRampeHoch(sekunden);
+			break;
+
+		case oben:
+			ich->TickOben(sekunden);
+			break;
+
+		case rampeRunter:
+			ich->TickRampeRunter(sekunden);
+			break;
+
+		case nachlauf:
+			ich->TickNachlauf(sekunden);
+			break;
+
+	}
+}
+
+/************************************************************************
+ * \date 08.08.2020
+ * \author Frank Tobergte
+ *
+ * \brief Ablaufsteuerung fuer dauerhaft eingeschaltet
+ * \param sekunden Abstand der Aufrufe in sekunden
+ ************************************************************************/
+void Schrittmotor::TickDauerhaftAn(float sekunden){
 	float maxBeschleunigungLocal;
 	float maxBremsenLocal;
 	float delta;
 	float neuUps;
-	float sollUps;
-	float istUps;
+	float sollUpsLocal;
+	float istUpsLocal;
 	bool umkr;
 
-	istUps = ich->istUps;
-	sollUps = ich->sollUps;
+	istUpsLocal = istUps;
+	sollUpsLocal = sollUps;
 
-	maxBeschleunigungLocal = ich->maxBeschleunigung * sekunden;
-	maxBremsenLocal = ich->maxBremsen * sekunden;
+	maxBeschleunigungLocal = maxBeschleunigung * sekunden;
+	maxBremsenLocal = maxBremsen * sekunden;
 
-	if(istUps < 0)
+	if(istUpsLocal < 0)
 	umkr = true;
 	else
 	umkr = false;
 
-	neuUps = sollUps;
-	delta = neuUps - istUps;
+	neuUps = sollUpsLocal;
+	delta = neuUps - istUpsLocal;
 	if(umkr){
 		if(delta <- maxBeschleunigungLocal)
-		neuUps = istUps - maxBeschleunigungLocal;
+		neuUps = istUpsLocal - maxBeschleunigungLocal;
 		if(delta > maxBremsenLocal)
-		neuUps = istUps + maxBremsenLocal;
+		neuUps = istUpsLocal + maxBremsenLocal;
 
 		}else{
 		if(delta > maxBeschleunigungLocal)
-		neuUps = istUps + maxBeschleunigungLocal;
+		neuUps = istUpsLocal + maxBeschleunigungLocal;
 		if(delta < -maxBremsenLocal)
-		neuUps = istUps - maxBremsenLocal;
+		neuUps = istUpsLocal - maxBremsenLocal;
 	}
-	istUps = neuUps;
-	ich->SetSpeedFloat(istUps);
-	ich->istUps = istUps;
-	switch(ich->modus){
+	istUpsLocal = neuUps;
+	SetSpeedFloatAutoRichtung(istUpsLocal);
+	istUps = istUpsLocal;
+	switch(modus){
 		case dauerhaftAn:
-		if((istUps == 0) && (sollUps == 0)){
-			ich->modus = powerOn;
+		if((istUpsLocal == 0) && (sollUpsLocal == 0)){
+			modus = powerOn;
 			Usart0::sende(" --> Steht\r\n>: ");
 		}
 		break;
+
 		default:
 		break;
 	}
 }
 
+void Schrittmotor::TickRampeHoch(float sekunden){
+	if(zeitSeitAnlauf < zeitBeschl){
+		rampeSpeedUPS += sollUps * sekunden / zeitBeschl;
+		if(rampeSpeedUPS < minimalSpeed)
+			SetSpeedFloatOhneRichtung(minimalSpeed);
+		else
+			SetSpeedFloatOhneRichtung(rampeSpeedUPS);
+	}else{
+		SetSpeedFloatOhneRichtung(sollUps);
+		modus = oben;
+	}
+}
+
+void Schrittmotor::TickOben(float sekunden){
+	if(zeitSeitAnlauf >= zeitBeschl + zeitFS)
+		modus = rampeRunter;
+}
+
+void Schrittmotor::TickRampeRunter(float sekunden){
+	if(zeitSeitAnlauf < zeitBeschl + zeitFS + zeitAbb){
+		rampeSpeedUPS -= sollUps * sekunden / zeitAbb;
+		if(rampeSpeedUPS < minimalSpeed)
+			SetSpeedFloatOhneRichtung(minimalSpeed);
+		else
+			SetSpeedFloatOhneRichtung(rampeSpeedUPS);
+		}else{
+			SetSpeedFloatOhneRichtung(minimalSpeed);
+			modus = nachlauf;
+	}
+
+}
+
+void Schrittmotor::TickNachlauf(float sekunden){
+	SetSpeedFloatOhneRichtung(0);
+	modus = powerOn;
+	Usart0::sende(" --> Steht\r\n>: ");
+}
+
+/************************************************************************
+ * \date 08.08.2020
+ * \author Frank Tobergte
+ *
+ * \brief Berechnet die Rampen zum Beschleinigen und Abbremsen
+ * \param anzahl der Umdrehungen die insgesamt gemacht werden sollen
+ * \param zeit die fuer die Umdrehungen mit Rampen gebraucht werden soll
+ ************************************************************************/
+void Schrittmotor::BerechneRampen(float anzahl, float zeit) {
+	float zeitReduziert;
+	if(anzahl < 0){
+		InOut::Richtung(true);
+		anzahl = -anzahl;
+	}
+	else
+		InOut::Richtung(false);
+
+	if(zeit < beschleunigungsphaseInSekunden + abbremsphaseInSekunden){
+		zeitBeschl = zeit * (2.0 / 3.0);
+		zeitAbb = zeit - zeitBeschl;
+		//zeitReduziert = zeitBeschl / 2 + zeitAbb / 2;
+		umdrBeschl = anzahl /zeit * zeitBeschl;
+		umdrAbb = anzahl /zeit * zeitAbb;
+		umdrFS = 0;
+		zeitFS = 0;
+
+	}else{
+		zeitBeschl = beschleunigungsphaseInSekunden;
+		zeitAbb = abbremsphaseInSekunden;
+		zeitFS = zeit - zeitBeschl - zeitAbb;
+		zeitReduziert = zeitFS + zeitBeschl / 2 + zeitAbb / 2;
+		umdrFS = anzahl  * zeitFS / zeitReduziert;
+		umdrBeschl = anzahl /zeitReduziert * zeitBeschl / 2;
+		umdrAbb = anzahl /zeitReduziert * zeitAbb / 2;
+	}
+
+
+
+
+
+
+	schritteZuGehen = round(anzahl *  Schrittmotor::GetPulseProUmdrehung()) ;
+	if(zeitFS > 0.0)
+		sollUps = umdrFS / zeitFS;
+	else
+		sollUps = umdrBeschl / zeitBeschl * 2;
+
+	if(sollUps > maximalSpeed){
+		sollUps = maximalSpeed;
+		umdrBeschl = sollUps * zeitBeschl / 2;
+		umdrAbb = sollUps * zeitAbb / 2;
+		umdrFS = anzahl - umdrBeschl - umdrAbb;
+		zeitFS = umdrFS / sollUps;
+	}
+
+
+
+}

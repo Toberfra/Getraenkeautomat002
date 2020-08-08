@@ -21,7 +21,7 @@ int main(void)
 	Usart0 tty(115000L);
 	Schrittmotor schrittmotor;
 
-	Befehle befehle((SchrittmotorInterface*)&schrittmotor);
+	Befehle befehle(&schrittmotor);
 	//schrittmotor.Power(true);
 	//schrittmotor.Speed(-4.0);
     /* Replace with your application code */

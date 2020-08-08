@@ -64,9 +64,15 @@ public:
 	~Schrittmotor();
 	bool Power(bool on);
 	bool Speed(float ups);
-	bool Umdrehungen(float umdr);
-	bool Umdrehungen(float umdr, float zeit);
+	bool UmdrehungenOhneZeit(float umdr);
+	bool UmdrehungenMitZeit(float umdr, float zeit);
 	static void Tick(float sekunden);
+	void TickDauerhaftAn(float sekunden);
+	void TickRampeHoch(float sekkunden);
+	void TickOben(float sekkunden);
+	void TickRampeRunter(float sekkunden);
+	void TickNachlauf(float sekkunden);
+
 	
 /************************************************************************
  *  Unterschiedliche Betriebsarten  
@@ -93,7 +99,7 @@ protected:
 	
 	unsigned long GetPulseProUmdrehung(void);
 	
-	
+	void BerechneRampen(float anzahl, float zeit);
 	
 private:	
 /************************************************************************
@@ -163,8 +169,92 @@ private:
  * \todo Sollte im EEProm gespeichert werden
  ************************************************************************/	
 	float maxBremsen;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Sekunden die gebremst werden soll.
+ * 
+ ************************************************************************/	
+	float abbremsphaseInSekunden;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Sekunden die Beschleunigt werden soll
+ * 
+ ************************************************************************/
+	float beschleunigungsphaseInSekunden;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Zeit in Sekunden die zwischen Beschleunigung und Abbremsen mit 
+ * voller Geschwindigkeit gefahren wird
+ * 
+ ************************************************************************/
+	float zeitFS;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Zeit in Sekunden die beschleunigt wird.
+ * 
+ ************************************************************************/
+	float zeitBeschl;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Zeit in Sekunden die abgebremmst wird.
+ * 
+ ************************************************************************/
+	float zeitAbb;
+
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Undrehungen die beschleunigt wird.
+ * 
+ ************************************************************************/
+	float umdrBeschl;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Umdrehungen die gebremmst wird.
+ * 
+ ************************************************************************/
+	float umdrAbb;
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Umdrehungen zwischen beschleunigen und abbremsen
+ * 
+ ************************************************************************/
+	float umdrFS;
+	
+	float rampeSpeedUPS;
+	
+	float zeitSeitAnlauf;
+	
+	float minimalSpeed;
+	
+	float maximalSpeed;
+	
+/************************************************************************
+ * \date 08.08.2020   
+ * \author Frank Tobergte
+ *
+ * \brief Anzahl der Pulse die insgesamt gefahren werden
+ * 
+ ************************************************************************/
+	unsigned long schritteZuGehen;
 		
-	void SetSpeedFloat(float ups);
+	void SetSpeedFloatAutoRichtung(float ups);
+	void SetSpeedFloatOhneRichtung(float ups);
 	void SetSpeedUL(unsigned long pps);
 	void SetRichtung(bool umkr);
 		

@@ -41,7 +41,7 @@ public:
  * \param umdr Anzahl der Umdrehungen
  * \return = true wenn der Befehl ausgefuehr wurde
  ************************************************************************/	
-	virtual bool Umdrehungen(float umdr) = 0;
+	virtual bool UmdrehungenOhneZeit(float umdr) = 0;
 /************************************************************************
  * \date 08.08.2020   
  * \author Frank Tobergte
@@ -52,7 +52,7 @@ public:
  * \param zeit die fuer die Umdrehungen vorgesehen ist
  * \return = true wenn der Befehl ausgefuehr wurde
  ************************************************************************/	
-virtual bool Umdrehungen(float umdr, float zeit) = 0;
+virtual bool UmdrehungenMitZeit(float umdr, float zeit) = 0;
 };
 	
 	

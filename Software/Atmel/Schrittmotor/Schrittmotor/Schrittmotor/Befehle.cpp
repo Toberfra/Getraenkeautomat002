@@ -31,7 +31,7 @@ Befehle::Befehle(){
  * \brief Konstruktor mit uebergabe des Motors.
  * \param motor der angesteuert wird.
  ************************************************************************/
-Befehle::Befehle(SchrittmotorInterface* motor){
+Befehle::Befehle(Schrittmotor* motor){
 	Befehle();
 	init(motor);
 }
@@ -47,7 +47,7 @@ Befehle::~Befehle(){
  * \brief Initzialisierumg
  * \param motor der angesteuert wird.
  ************************************************************************/
-void Befehle::init(SchrittmotorInterface* motor){
+void Befehle::init(Schrittmotor* motor){
 	this->motor = motor;
 	schreibePrompt(true);
 }
@@ -240,10 +240,14 @@ bool Befehle::befehlUmdr(){
 	bool ok = false;
 	float n;
 	float t;
-	if( anfaengeZaehler == 3){
+	if( anfaengeZaehler == 2){
+		n = atof(anfaenge[1]);
+		ok = motor->UmdrehungenOhneZeit(n);
+	}
+	else if( anfaengeZaehler == 3){
 		n = atof(anfaenge[1]);
 		t = atof(anfaenge[2]);
-		ok = motor->Umdrehungen(n,t);
+		ok = motor->UmdrehungenMitZeit(n,t);
 	}
 	return ok;
 };
