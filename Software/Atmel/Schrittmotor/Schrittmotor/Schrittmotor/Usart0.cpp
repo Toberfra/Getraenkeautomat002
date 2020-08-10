@@ -117,7 +117,7 @@ bool Usart0::isWasZuLesen(){
  ************************************************************************/
 char Usart0::lesen(){
 	return empfangsBuffer.pop();
-	//UCSR0B |= 1 << RXCIE0;
+	UCSR0B |= 1 << RXCIE0;
 }
 
 /************************************************************************
@@ -145,7 +145,7 @@ void Usart0::interUdre(){
  ************************************************************************/
 void Usart0::interRx(){
 	
-	PINB = 1<<5;
+	//PINB = 1<<5;
 	
 	if(empfangsBuffer.isFull()){
 		UCSR0B &= ~(1 << RXCIE0);

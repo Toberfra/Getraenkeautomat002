@@ -18,7 +18,8 @@
 int main(void)
 {
 	InOut::Init();
-	Usart0 tty(115000L);
+	Usart0 tty(9600);
+	tty.sende("Pumpe1:\r\n");
 	Schrittmotor schrittmotor;
 
 	Befehle befehle(&schrittmotor);
@@ -26,7 +27,7 @@ int main(void)
 	//schrittmotor.Speed(-4.0);
     /* Replace with your application code */
 	sei();
-	tty.sende("Pumpe1:\r\n");
+	
     while (1) 
     {
 		befehle.step();
