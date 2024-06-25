@@ -2,7 +2,7 @@
 Ein Cocktailmixer:
 
 Er Besteht aus mehreren Komponenten:
-  - Einer Peristalik Pumpen.
+  - Vielen Peristalik Pumpen.
     - Diese können 3D gedruckt werden. Siehe xxx
     - Sie werden von einem Nema XX Schrittmotor angetrieben.
   - Motor ansteuerung der Schrittmotoren.
