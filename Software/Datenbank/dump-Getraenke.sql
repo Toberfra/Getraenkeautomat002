@@ -18,7 +18,7 @@
 --
 -- Table structure for table `Ausgabe_Groesse`
 --
-use getraenke
+use getraenke;
 DROP TABLE IF EXISTS `Ausgabe_Groesse`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
@@ -75,7 +75,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER Einheiten_AU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Einheiten_AU
 AFTER UPDATE
 ON Einheiten 
 FOR EACH ROW
@@ -144,7 +144,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`%`*/ /*!50003 TRIGGER Flasche_BU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Flasche_BU
 BEFORE UPDATE
 ON Flasche FOR EACH ROW
 
@@ -240,7 +240,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`%`*/ /*!50003 TRIGGER Flaschen_BU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Flaschen_BU
 BEFORE UPDATE
 ON Flaschen FOR EACH ROW
 
@@ -360,7 +360,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`Getraenke`@`localhost`*/ /*!50003 TRIGGER Rezept_BU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Rezept_BU
 BEFORE UPDATE
 ON Rezept FOR EACH ROW
 	BEGIN
@@ -445,7 +445,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_BI
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_BI
 BEFORE INSERT
 ON Rezept_Zutat FOR EACH ROW
 
@@ -467,7 +467,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AI
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AI
 AFTER  INSERT 
 
 ON Rezept_Zutat FOR EACH ROW
@@ -494,7 +494,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `Rezept_Zutat_BU` BEFORE UPDATE
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER `Rezept_Zutat_BU` BEFORE UPDATE
 ON Rezept_Zutat 
 FOR EACH ROW
 	BEGIN
@@ -532,7 +532,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AU
 AFTER UPDATE
 ON Rezept_Zutat FOR EACH ROW
 
@@ -604,7 +604,7 @@ DELIMITER ;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AD
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Rezept_Zutat_AD
 AFTER  DELETE 
 
 ON Rezept_Zutat FOR EACH ROW
@@ -767,7 +767,7 @@ UNLOCK TABLES;
 /*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
 /*!50003 SET sql_mode              = 'STRICT_TRANS_TABLES' */ ;
 DELIMITER ;;
-/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`%`*/ /*!50003 TRIGGER Zutaten_AU
+/*!50003 CREATE*/ /*!50017 DEFINER=`remote`@`localhost`*/ /*!50003 TRIGGER Zutaten_AU
 AFTER UPDATE
 ON Zutaten FOR EACH ROW
 BEGIN
@@ -821,3 +821,4 @@ SET character_set_client = @saved_cs_client;
 --
 
 DROP TABLE IF EXISTS `view_Cocktail`;
+
